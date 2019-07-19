@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header_logo">
+        <img class="page-header__logo-image" src="../img/placeholder.svg" width="33" height="38" alt="Логотип Cat energy">
+      </a>
+      <a class="page-header_logo">
+        <img class="page-header__logo-header" src="../img/placeholder.svg" width="101" height="18" alt="Логотип Cat energy">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="vissually-hidden">Анкета</h1>
+      <section class="form__wrapper">
+        <h2 class="form__header">Подбор программы</h2>
+        <p class="form__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form class="form" action="https://echo.htmlacademy.ru" method="GET">
+          <div class="form__data">
+            <label class="form__data__sign" for="form__data__name">Имя:<sup>*</sup></label>
+            <input class="form__data__field" type="text" id="form__data__name" name="form__data__field" placeholder="Барсик">
+            <label class="form__data__sign" for="form__data__weight">Вес(кг):<sup>*</sup></label>
+            <input class="form__data__field" type="text" id="form__data__weight" name="form__data__field" placeholder="7">
+            <label class="form__data__sign" for="form__data__age">Возраст(лет):<sup>*</sup></label>
+            <input class="form__data__field" type="text" id="form__data__age" name="form__data__field" placeholder="7">
+            <input class="form__data__radio" type="radio" id="form__data__slim" name="form__data__radio" value="slim" checked>
+            <label class="form__data__sign" for="form__data__slim">Похудение</label>
+            <input class="form__data__radio" type="radio" id="form__data__weight" name="form__data__radio" value="weight">
+            <label class="form__data__sign" for="form__data__weight">Набор массы</label>
+            <input class="form__data__radio" type="radio" id="form__data__dont-know" name="form__data__radio" value="dont-know">
+            <label class="form__data__sign" for="form__data__dont-know">Не знаю (нужен ваш совет)</label>
+          </div>
+          <div class="contacts">
+            <h2 class="contacts__header">Контактные данные (владельца кота)</h2>
+            <label class="form__data__sign" for="form__data__mail">E-mail:<sup>*</sup></label>
+            <input class="form__data__field" type="text" id="form__data__mail" name="form__data__field" placeholder="kuklachev@gmail.com">
+            <label class="form__data__sign" for="form__data__tel">Телефон:<sup>*</sup></label>
+            <input class="form__data__field" type="tel" id="form__data__tel" name="form__data__field" pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8(960)900-60-90">
+          </div>
+          <div class="comments">
+            <h2 class="comments__header">Комментарий</h2>
+            <textarea class="comments__text-area" name="comments__text-area" id="comments__text-area" rows="20">Расскажите обо всех повадках кота</textarea>
+          </div>
+          <div class="additionally__data">
+            <h2 class="additionally__data__header">Дополнительно</h2>
+            <input class="additionally__data__checkbox" type="checkbox" id="additionally__data__sugar-substitute" name="additionally__data__checkbox" checked>
+            <label class="additionally__data__sign" for="additionally__data__sugar-substitute">Сахарозаменитель</label>
+            <input class="additionally__data__checkbox" type="checkbox" id="additionally__form__data__water" name="additionally__form__data__checkbox">
+            <label class="additionally__data__sign" for="additionally__data__water">Питьевая вода</label>
+            <input class="additionally__data__checkbox" type="checkbox" id="additionally__data__milk" name="additionally__data__checkbox">
+            <label class="additionally__data__sign" for="additionally__data__milk">Молоко</label>
+            <input class="additionally__data__checkbox" type="checkbox" id="additionally__data__vits" name="additionally__data__checkbox">
+            <label class="additionally__data__sign" for="additionally__data__vits">Витамины</label>
+          </div>
+          <button class="button form__button" type="submit">Отправить заявку</button>
+          <p class="form__note"><sup>*</sup>— Обязательные поля</p>
+        </form>
+      </section>
+    </main>
+    <footer class="page__footer">
+      <div class="footer__contact">
+        <p class="footer__contact__title">Приглашаем к сотрудничеству</p>
+        <p class="footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="footer__map">
+        <img src="../img/map.jpg">
+      </div>
+      <a class="footer_logo">
+        <img class="footer__logo-footer" src="../img/placeholder.svg" width="128" height="24" alt="Логотип Cat energy">
+      </a>
+      <ul class="social__list social">
+        <li class="social__list__item">
+          <a class="social__list__item__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__list__item">
+          <a class="social__list__item__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__list__item">
+          <a class="social__list__item__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link__image" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-headen">Логотип HTML Academy</span></a>
+      </div>
+    </footer>
+  </body>
+</html>
