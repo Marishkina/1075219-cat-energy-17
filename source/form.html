@@ -4,108 +4,16 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-<<<<<<< HEAD
-  <body>
-    <header class="page-header">
-      <a class="page-header__link-logo" href="index.html">
-        <img class="logo-image page-header__logo-image" src="../img/placeholder.svg" width="33" height="38" alt="Логотип Cat energy">
-      </a>
-      <a class="page-header__link-logo" href="index.html">
-        <img class="logo logo--size-s" src="../img/placeholder.svg" width="101" height="18" alt="Логотип Cat energy">
-      </a>
-      <nav class="main-nav page-header__main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="main">
-      <form class="form" action="https://echo.htmlacademy.ru" method="GET">
-        <h1 class="page-title form__header">Подбор программы</h1>
-        <p class="intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <div class="form__wrapper">
-          <div class="input form__input">
-            <label class="input__label">
-              <span class="input__span">Имя:<sup>*</sup></span>
-              <input class="input__field" type="text" id="input-name" name="input-name" placeholder="Барсик" autofocus>
-            </label>
-            <label class="input__label">
-              <span class="input__span">Вес (кг):<sup>*</sup></span>
-              <input class="input__field" type="text" id="input-weight" name="input-weight" placeholder="7">
-            </label>
-            <label class="input__label">
-              <span class="input__span">Возраст (лет):<sup>*</sup></span>
-              <input class="input__field" type="text" id="input-age" name="input-age" placeholder="7">
-            </label>
-          </div>
-          <div class="radio form__radio">
-            <label class="radio__label">
-              <input class="radio__control" type="radio" name="program" value="slim" checked>
-              <span class="radio__span">Похудение</span>
-            </label>
-            <label class="radio__label">
-              <input class="radio__control" type="radio" name="program" value="weight">
-              <span class="radio__span">Набор массы</span>
-            </label>
-            <label class="radio__label">
-              <input class="radio__control" type="radio" name="program" value="adviсe">
-              <span class="radio__span">Не знаю (нужен ваш совет)</span>
-            </label>
-          </div>
-          <div class="contacts form__contacts">
-            <h2 class="header__2 contacts__header">Контактные данные (владельца кота)</h2>
-            <label class="input__label">
-              <span class="input__span">E-mail:<sup>*</sup></span>
-              <input class="input" type="text" id="input-mail" name="input-mail" placeholder="kuklachev@gmail.com">
-            </label>
-            <label class="input__label">
-              <span class="input__span">Телефон:<sup>*</sup></span>
-              <input class="input" type="tel" id="input-tel" name="input-tel" pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8(960)900-60-90">
-            </label>
-          </div>
-          <div class="comments form__comments">
-            <h2 class="header__2 comments__header">Комментарий</h2>
-            <textarea class="comments__text-area" name="comments__text-area" id="comments__text-area" rows="20">Расскажите обо всех повадках кота</textarea>
-          </div>
-          <div class="checkbox form__checkbox">
-            <h2 class="header__2 checkbox__header">Дополнительно</h2>
-            <label class="checkbox__label">
-              <input class="checkbox__control" type="checkbox" name="sugar-substitute" checked>
-              <span class="checkbox__span">Сахарозаменитель</span>
-            </label>
-            <label class="checkbox-label">
-              <input class="checkbox__control" type="checkbox" name="water">
-              <span class="checkbox__span">Питьевая вода</span>
-            </label>
-          <label class="checkbox__label">
-            <input class="checkbox__control" type="checkbox" name="milk">
-            <span class="checkbox__span">Молоко</span>
-          </label>
-          <label class="checkbox__label">
-            <input class="checkbox__control" type="checkbox" name="vits">
-            <span class="checkbox__span">Витамины</span>
-=======
 
   <body>
 
     <header class="page-header">
       <div class="logo">
         <a class="logo__link" href="index.html">
-          <img class="logo-img logo__logo-img" src="../img/placeholder.svg" width="33" height="38" alt="Логотип Cat energy">
+          <img class="logo-img" src="../img/placeholder.svg" width="33" height="38" alt="Логотип Cat energy">
         </a>
         <a class="logo__link" href="index.html">
-          <img class="logo-title logo__logo-title--size-s" src="../img/placeholder.svg" width="101" height="18" alt="Логотип Cat energy">
+          <img class="logo-title" src="../img/placeholder.svg" width="101" height="18" alt="Логотип Cat energy">
         </a>
       </div>
       <nav class="main-nav page-header__main-nav">
@@ -159,7 +67,7 @@
             </label>
           </div>
           <div class="form__group">
-            <h2 class="contact-details__title">Контактные данные (владельца кота)</h2>
+            <h2 class="form-group__title">Контактные данные (владельца кота)</h2>
             <label class="input">
               <span class="input__label">E-mail:<sup>*</sup></span>
               <input class="input__input-field" type="email" id="input-email" name="input-email" placeholder="kuklachev@gmail.com">
@@ -170,11 +78,11 @@
             </label>
           </div>
           <div class="form__group">
-            <h2 class="comments__title">Комментарий</h2>
-            <textarea class="comments__text-area" name="comments__text-area" id="comments__text-area" rows="20">Расскажите обо всех повадках кота</textarea>
+            <h2 class="form-group__title">Комментарий</h2>
+            <textarea class="text-area" name="text-area" id="text-area" rows="20">Расскажите обо всех повадках кота</textarea>
           </div>
           <div class="form__group">
-            <h2 class="checkbox__title">Дополнительно</h2>
+            <h2 class="form-group__title">Дополнительно</h2>
             <label class="checkbox">
               <input class="checkbox__control" type="checkbox" name="sugar-substitute" checked>
               <span class="checkbox__label">Сахарозаменитель</span>
@@ -190,19 +98,11 @@
           <label class="checkbox">
             <input class="checkbox__control" type="checkbox" name="vits">
             <span class="checkbox__label">Витамины</span>
->>>>>>> 21deeb05f69f194b7bffdf2f91074ddead944f34
           </label>
         </div>
         <button class="button form__button" type="submit">Отправить заявку</button>
         <p class="form__note"><sup>*</sup>— Обязательные поля</p>
       </form>
-<<<<<<< HEAD
-    </main>
-    <footer class="footer">
-      <div class="footer-contact">
-        <p class="footer-title footer-contact__title">Приглашаем к сотрудничеству</p>
-        <p class="address footer-contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-=======
 
     </main>
 
@@ -210,44 +110,29 @@
       <div class="footer__contacts">
         <p class="footer__title">Приглашаем к сотрудничеству</p>
         <p class="footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
->>>>>>> 21deeb05f69f194b7bffdf2f91074ddead944f34
       </div>
       <div class="map footer__map">
         <img class="map__image" src="../img/map.jpg">
       </div>
       <a class="footer__logo" href="index.html">
-<<<<<<< HEAD
-        <img class="logo logo--size-l" src="../img/placeholder.svg" width="128" height="24" alt="Логотип Cat energy">
-      </a>
-      <ul class="social__list social">
-=======
-        <img class="logo-title logo__logo-title--size-l" src="../img/placeholder.svg" width="128" height="24" alt="Логотип Cat energy">
+        <img class="logo-title" src="../img/placeholder.svg" width="128" height="24" alt="Логотип Cat energy">
       </a>
       <ul class="social social__list">
->>>>>>> 21deeb05f69f194b7bffdf2f91074ddead944f34
         <li class="social__item">
-          <a class="social__item__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
         </li>
         <li class="social__item">
-          <a class="social__item__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
         </li>
         <li class="social__item">
-          <a class="social__item__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
         </li>
       </ul>
-<<<<<<< HEAD
-      <div class="footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__link__image" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-headen">Логотип HTML Academy</span></a>
-      </div>
-    </footer>
-=======
       <div class="copyright footer__copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__link-img" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-headen">Логотип HTML Academy</span></a>
       </div>
     </footer>
 
->>>>>>> 21deeb05f69f194b7bffdf2f91074ddead944f34
   </body>
 </html>

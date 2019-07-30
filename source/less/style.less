@@ -1,0 +1,50 @@
+@import "blocks/header.less";
+@import "blocks/intro.less";
+@import "blocks/features.less";
+@import "blocks/advantages.less";
+@import "blocks/example.less";
+@import "blocks/catalog.less";
+@import "blocks/additional-goods.less";
+@import "blocks/footer.less";
+
+@main-color: #68b738;
+@grey-color: #f2f2f2;
+@black-color: #000000;
+@text-color: #444444;
+@white-color: #ffffff;
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Oswaldmedium", "Arial", sans-serif;
+  color: @text-color;
+  font-weight: 400;
+
+  background-color: @white-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
