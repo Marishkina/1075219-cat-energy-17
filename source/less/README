@@ -7,5 +7,21 @@ http://lesscss.org
 Структура файлов:
 
 less/
+| - blocks.less               # папка с БЭМ-блоками
+| - | - additional-goods.less # файл для блока catalog.html
+| - | - advantages.less       # файл для блока index.html
+| - | - button.less           # файл для блока button
+| - | - catalog-card.less     # файл для блока catalog.html
+| - | - copyright.less        # файл для блока footer
+| - | - example.less          # файл для блока index.html
+| - | - features.less         # файл для блока index.html
+| - | - footer.less           # файл для блока footer
+| - | - header.less           # файл для блока header
+| - | - intro.less            # файл для блока index.html
+| - | - living-example.less   # файл для блока index.html
+| - | - map.less              # файл для блока footer
+| - | - social.less           # файл для блока footer
+| - global.less               # файл для body, img, vissually-hidden
+| - mixins.less               # файл для примесей
 | - style.less
-| - [другие *.less файлы]
+| - variables.less            # файл для переменных проекта
