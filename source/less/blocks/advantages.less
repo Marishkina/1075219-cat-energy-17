@@ -18,34 +18,27 @@
 .advantages__item {
   width: 200px;
   margin-bottom:  34px;
+
     &::before {
     .pseudo;
     width: 60px;
     height: 60px;
     background-color: @main-color;
     background-repeat: no-repeat;
-}
 
-.advantages__item--leaf {
-    &::before {
-    background-image: url("../img/advantage-leaf@1x.png");
-  }
-}
-
-.advantages__item--powder {
-    &::before {
-    background-image: url("../img/advantage-powder@1x.png");
-  }
-}
-
-.advantages__item--dining {
-    &::before {
-    background-image: url("../img/advantage-dining@1x.png");
+    &--leaf {
+      background-image: url("../img/advantage-leaf@1x.png");
     }
-}
 
-.advantages__item--clock {
-    &::before {
-    background-image: url("../img/advantage-clock@1x.png");
-  }
+    &--powder {
+      background-image: url("../img/advantage-powder@1x.png");
+    }
+
+    &--dining {
+      background-image: url("../img/advantage-dining@1x.png");
+    }
+
+    &--clock {
+      background-image: url("../img/advantage-clock@1x.png");
+    }
 }

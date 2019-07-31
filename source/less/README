@@ -16,12 +16,16 @@ less/
 | - | - example.less          # файл для блока index.html
 | - | - features.less         # файл для блока index.html
 | - | - footer.less           # файл для блока footer
-| - | - header.less           # файл для блока header
+| - | - page-header.less      # файл для блока header
 | - | - intro.less            # файл для блока index.html
 | - | - living-example.less   # файл для блока index.html
+| - | - main-nav.less         # файл для блока header
 | - | - map.less              # файл для блока footer
+| - | - site-list.less        # файл для блока header
 | - | - social.less           # файл для блока footer
-| - global.less               # файл для body, img, vissually-hidden
-| - mixins.less               # файл для примесей
+| - common.less               # папка с БЭМ-блоками
+| - |- global.less            # файл для body, img, vissually-hidden
+| - | - mixins.less           # файл для примесей
+| - | - variables.less            # файл для переменных проекта
 | - style.less
-| - variables.less            # файл для переменных проекта
+
