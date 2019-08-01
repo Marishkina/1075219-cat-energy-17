@@ -28,4 +28,3 @@ less/
 | - | - mixins.less           # файл для примесей
 | - | - variables.less            # файл для переменных проекта
 | - style.less
-
