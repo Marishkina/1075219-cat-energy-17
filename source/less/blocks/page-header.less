@@ -1,6 +1,6 @@
 .page-header {
-  min-width: 320px;
-  min-height: 65px;
+  display: flex;
+  flex-direction: column;
 
   .padding;
 
@@ -11,4 +11,10 @@
   display: block;
   width: 191px;
   height: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    flex-direction: row;
+  }
 }

@@ -1,4 +1,7 @@
 .site-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -12,4 +15,19 @@
 .site-list__link {
   text-decoration: none;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 490px;
+  }
 }

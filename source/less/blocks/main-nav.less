@@ -4,3 +4,21 @@
   background-image: url("../img/icon-mobile-menu.svg");
   border: none;
 }
+
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 1220px;
+  }
+}

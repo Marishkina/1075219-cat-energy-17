@@ -26,5 +26,5 @@ less/
 | - common.less               # папка с БЭМ-блоками
 | - |- global.less            # файл для body, img, vissually-hidden
 | - | - mixins.less           # файл для примесей
-| - | - variables.less            # файл для переменных проекта
+| - | - variables.less        # файл для переменных проекта
 | - style.less
