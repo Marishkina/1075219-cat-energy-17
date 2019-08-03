@@ -5,14 +5,11 @@
   list-style: none;
 }
 
-.site-list__item {
+.site-list__link {
   font-size: 20px;
   line-height: 20px;
   font-weight: 600;
   .text-transform;
-}
-
-.site-list__link {
   text-decoration: none;
   color: @black;
 }
@@ -20,14 +17,33 @@
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 440px;
-    margin: 0 auto;
+  }
+
+  .site-list__item {
+    margin-right: 40px;
+  }
+
+  .site-list__link {
+    font-size: 18px;
+    line-height: 24.86px;
+    font-weight: 400;
+    .text-transform;
   }
 }
 
 @media (min-width: @desktop-width) {
   .site-list {
-    width: 490px;
+    width: 500px;
+  }
+
+  .site-list__item {
+    margin-right: 0;
+  }
+
+  .site-list__link {
+    font-size: 20px;
   }
 }

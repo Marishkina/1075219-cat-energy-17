@@ -1,12 +1,16 @@
 .main-nav__toggle {
+  position: absolute;
+  top: -30px;
+  right: -45px;
   width: 24px;
   height: 18px;
   background-image: url("../img/icon-mobile-menu.svg");
+  background-color: none;
   border: none;
 }
 
 .main-nav {
-  width: 320px;
+  position: relative;
   margin: 0 auto;
 }
 
@@ -15,10 +19,8 @@
     width: auto;
     margin: 0;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .main-nav {
-    width: 1220px;
+  .main-nav__toggle {
+    display: none;
   }
 }

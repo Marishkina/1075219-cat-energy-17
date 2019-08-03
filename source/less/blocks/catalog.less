@@ -1,5 +1,5 @@
 .catalog {
-  .padding;
+  .padding(20px);
 }
 
 .catalog__title {
@@ -7,4 +7,34 @@
   font-weight: 400;
   line-height: 60px;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    .padding(30px);
+  }
+
+  .catalog__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__title {
+    font-size: 60px;
+  }
+
+  .catalog__button--width {
+    width: 249px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    .padding(110px);
+  }
+
+  .catalog__button--width {
+    width: 169px;
+  }
 }

@@ -1,6 +1,6 @@
 .features {
-  .padding;
   position: relative;
+  .padding(20px);
 }
 
 .features__wrapper {
@@ -11,7 +11,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
-  color: @black-color;
+  color: @black;
   .text-transform;
 
   &::before {
@@ -47,4 +47,17 @@
 
 .features__description {
   width: 235px;
+}
+
+@media (min-width: @desktop-width) {
+  .features {
+    display: flex;
+    justify-content: space-between;
+
+    .padding(110px);
+  }
+
+  .features__wrapper {
+    width: 570px;
+  }
 }
