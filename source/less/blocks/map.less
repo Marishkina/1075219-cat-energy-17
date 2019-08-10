@@ -1,6 +1,8 @@
 .map {
-  min-height: 362px;
   width: 320px;
+  height: 362px;
+  margin: 0 auto;
+
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
 }
@@ -8,19 +10,20 @@
 .map__iframe {
   border: 0;
   width: 100%;
-  min-height: 362px;
+  height: 100%;
 }
 
 @media (min-width: @tablet-width) {
   .map {
-    width: 100%;
+    width: 768px;
+    height: 398px;
     background-image: url("../img/bg-map-tablet@1x.png");
   }
 }
 
 @media (min-width: @desktop-width) {
   .map {
-    width: 100%;
+    width: 1440px;
     background-image: url("../img/bg-map-desktop@1x.png");
   }
 }

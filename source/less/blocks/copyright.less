@@ -1,13 +1,40 @@
 .copyright {
-  .padding(20px);
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  padding-bottom: 18px;
 }
 
 .copyright__link {
+  width: 120px;
+  margin-top: 10px;
+
+  .arial;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
   color: @grey;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.copyright__link-img {
+  width: 40px;
+  height: 47px;
+  margin-right: -5px;
+  margin-top: 15px;
+
+  &:hover path {
+    fill: #68b738;
+  }
+
+  &:active path {
+    fill: rgba(104, 183, 56, 0.3);
+  }
 }

@@ -1,58 +1,115 @@
 .intro {
   position: relative;
-
-  display: flex;
-  flex-direction: column;
 }
 
 .intro__title {
   position: absolute;
-  margin: 0;
-  width: 300px;
+  top: -442px;
+
+  width: 280px;
+
+  .oswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  color: @white;
   text-align: center;
+  color: @white;
 }
 
 .intro__slogan {
   position: absolute;
-  margin: 0;
+  top: -330px;
+
+  width: 280px;
+
+  .oswald;
   line-height: 14px;
-  color: @white;
   .text-transform;
+  text-align: center;
+  color: @white;
+}
+
+.intro__img {
+  position: absolute;
+  bottom: 42px;
+}
+
+.intro__button {
+  margin-top: 135px;
+  margin-bottom: 23px;
 }
 
 @media (min-width: @tablet-width) {
-  .intro {
-    .padding(30px);
-  }
-
-  .intro__background {
-    display: none;
-  }
-
   .intro__title {
-    position: relative;
+    position: static;
+
     width: 420px;
+    margin-left: 90px;
+    margin-bottom: 41px;
+
     font-size: 60px;
-    font-weight: 400;
     line-height: 60px;
-    color: @black;
     text-align: left;
+    color: @black;
   }
 
   .intro__slogan {
-    position: relative;
+    position: static;
+
+    width: 320px;
+    margin-left: 90px;
+
     font-size: 20px;
     line-height: 20px;
+    text-align: left;
     color: @black;
+  }
+
+  .intro__img {
+    position: static;
+
+    width: 709px;
+    height: 609px;
+  }
+
+  .intro__button {
+    position: absolute;
+    top: 96px;
+    left: 121px;
+
+    width: 245px;
+    height: 52px;
+    padding-top: 15px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .intro {
-    padding-left: 110px;
+    margin-bottom: 130px;
+  }
+
+  .intro__title {
+    margin-left: 80px;
+    margin-top: 103px;
+    margin-bottom: 40px;
+  }
+
+  .intro__slogan {
+    margin-left: 80px;
+  }
+
+  .intro__button {
+    top: 98px;
+    left: 190px;
+  }
+
+  .intro__img {
+    width: 552px;
+    height: 499px;
+    margin-top: -280px;
+    margin-left: 470px;
   }
 }

@@ -1,58 +1,93 @@
 .footer__contacts {
   display: flex;
   justify-content: space-between;
+
   min-height: 114px;
-  .padding(20px);
 }
 
 .footer__title {
-  width: 293px;
+  width: 192px;
+  margin: 0;
+  padding-top: 28px;
+
+  .oswald;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: @black;
   .text-transform;
 }
 
 .footer__address {
-  width: 140px;
+  width: 185px;
+  padding-top: 14px;
+
+  .arial;
   font-size: 14px;
   line-height: 20px;
+  text-align: left;
 }
 
 .footer__color-wrapper {
+  background-color: @light-grey;
+  padding-top: 40px;
+}
+
+.footer__logo {
+  display: block;
+  padding-bottom: 30px;
+
+  text-align: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.footer__contacts--background-color {
   background-color: @light-grey;
 }
 
 @media (min-width: @tablet-width) {
   .footer__contacts {
-    .padding(30px);
+    padding-bottom: 59px;
+  }
+
+  .footer__title {
+    width: 203px;
+    margin-left: 42px;
+    margin-top: 38px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .footer__address {
+    width: 166px;
+    margin-right: 42px;
+    margin-top: 50px;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
   }
 
   .footer__color-wrapper {
     display: flex;
     justify-content: space-between;
-  }
 
-  .footer__title {
-    width: 293px;
-
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  .footer__address {
-    width: 168px;
-
-    font-size: 16px;
-    line-height: 20px;
+    padding-bottom: 26px;
   }
 
   .footer__logo {
-    margin-left: 30px;
-  }
-
-  .footer__copyright {
-    margin-right: 30px;
+    margin-top: 26px;
+    border: none;
   }
 }
 
@@ -64,17 +99,22 @@
   .footer__contacts {
     position: absolute;
 
+    margin-top: 96px;
     margin-left: 110px;
+    padding: 0;
     width: 570px;
+    min-height: 201px;
 
     background-color: @white;
   }
 
-  .footer__logo {
-    margin-left: 110px;
+  .footer__title {
+    margin-left: 75px;
   }
 
-  .footer__copyright {
-    margin-right: 110px;
+  .footer__address {
+    margin-right: 78px;
+
+    text-align: left;
   }
 }

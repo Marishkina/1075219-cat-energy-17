@@ -1,5 +1,35 @@
 .social {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  padding-right: 60px;
+  padding-left: 50px;
+  padding-bottom: 21px;
+  margin: 0;
+  margin-top: 20px;
+
   list-style: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+}
+
+.social__link {
+  &:hover path,
+  &:hover circle {
+    fill: #68b738;
+  }
+
+  &:active path,
+  &:active circle {
+    fill: rgba(104, 183, 56, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    width: 130px;
+
+    border: none;
+  }
 }
