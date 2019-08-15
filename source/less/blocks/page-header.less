@@ -2,18 +2,30 @@
   display: flex;
   flex-direction: column;
 
+  width: 320px;
+  min-height: 65px;
+  margin: 0 auto;
+  margin-bottom: 197px;
+
   background-color: @white;
+}
+
+.page-header--catalog {
+  margin-bottom: 0;
+}
+
+.page-header__wrapper {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 115px;
 }
 
 .page-header__logo {
   display: block;
 
-  min-height: 65px;
-  margin: 0 auto;
-  padding-right: 87px;
-  padding-top: 10px;
-
-  box-sizing: border-box;
+  width: 191px;
+  height: 38px;
+  padding-bottom: 17px;
 
   &:hover {
     opacity: 0.8;
@@ -24,53 +36,205 @@
   }
 }
 
-.page-header__img {
+.page-header__intro {
   width: 320px;
-  min-height: 305px;
-  margin: 0 auto;
+  height: 305px;
+
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px auto;
 
   background-color: @main-color;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+}
+
+.page-header__title {
+  width: 320px;
+  height: 305px;
+  margin: 0 auto;
+  padding-top: 27px;
+  box-sizing: border-box;
+
+  .oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: @white;
+}
+
+.page-header__slogan {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: -181px;
+  margin-bottom: 30px;
+
+  .oswald;
+  line-height: 14px;
+  .text-transform;
+  text-align: center;
+  color: @white;
+}
+
+.page-header__img {
+  display: block;
+
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 2px;
+}
+
+.page-header__button {
+  display: block;
+  margin: 0 auto;
+  margin-right: 20px;
+  margin-bottom: 23px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
-    flex-direction: row;
+    position: relative;
 
     width: 768px;
     margin: 0 auto;
   }
 
-  .page-header__img {
-    display: none;
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 0;
+    padding-top: 25px;
+    .padding (30px);
+    box-sizing: border-box;
   }
 
   .page-header__logo {
-    margin-left: 50px;
-  }
-
-  .logo-img {
     width: 173px;
     height: 58px;
+    padding: 0;
+  }
+
+  .page-header__intro {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 768px;
+    height: 860px;
+    padding-left: 30px;
+    padding-top: 50px;
+    box-sizing: border-box;
+
+    background-image: none;
+    background-color: transparent;
+  }
+
+  .page-header__title {
+    width: 505px;
+    height: 120px;
+    margin: 0;
+    margin-bottom: 42px;
+    padding: 0;
+    padding-left: 88px;
+
+    font-size: 60px;
+    line-height: 60px;
+    color: @black;
+    text-align: left;
+  }
+
+  .page-header__slogan {
+    width: 320px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-left: 88px;
+
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+    text-align: left;
+  }
+
+  .page-header__button {
+    position: absolute;
+    bottom: 505px;
+    left: 118px;
+
+    width: 245px;
+    height: 52px;
+
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 14px;
+  }
+
+  .page-header__img {
+    width: 709px;
+    margin: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    width: 1220px;
+    width: 1440px;
+    min-height: 696px;
+    padding-bottom: 56px;
+
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 720px 696px;
+    background-position: 720px 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
-  .page-header__img {
-    width: 720px;
-    height: 696px;
+  .page-header--catalog {
+    background-image: none;
+    min-height: 59px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: none;
+    }
+  }
+
+  .page-header__wrapper {
+    padding-top: 73px;
+    .padding (110px);
   }
 
   .page-header__logo {
-    margin-top: 56px;
+    width: 202px;
+    height: 59px;
     margin-left: 0;
   }
 
-  .logo-img {
-    width: 202px;
-    height: 59px;
+  .page-header__intro {
+    flex-direction: column;
+
+    position: relative;
+
+    height: 558px;
+    padding-top: 80px;
+    padding-left: 103px;
+  }
+
+  .page-header__img {
+    position: absolute;
+    top: 2px;
+    right: -345px;
+
+    width: 552px;
+  }
+
+  .page-header__button {
+    top: 316px;
+    left: 191px;
   }
 }
