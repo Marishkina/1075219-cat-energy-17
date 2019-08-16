@@ -1,10 +1,51 @@
 .catalog {
-  .padding;
+  position: relative;
+
+  padding-top: 15px;
+  padding-bottom: 26px;
 }
 
 .catalog__title {
+  margin: 0;
+  padding-bottom: 26px;
+  .oswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+  .catalog__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__title {
+    padding-bottom: 70px;
+
+    font-size: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    padding-top: 70px;
+  }
+
+  .catalog__title {
+    padding: 0;
+    padding-bottom: 68px;
+  }
+
+  .catalog__button--width {
+    width: 169px;
+    padding-bottom: 70px;
+  }
 }

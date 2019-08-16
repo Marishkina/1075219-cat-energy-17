@@ -1,13 +1,47 @@
 .copyright {
-  .padding;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 13px;
 }
 
 .copyright__link {
+  width: 120px;
+
+  .arial;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
-  color: @grey;
+  color: @black;
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.copyright__link-img {
+  width: 39px;
+  height: 49px;
+  margin-right: -5px;
+
+  &:hover path {
+    fill: #68b738;
+  }
+
+  &:active path {
+    fill: rgba(104, 183, 56, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer__color-wrapper {
+    padding-top: 52px;
+  }
 }

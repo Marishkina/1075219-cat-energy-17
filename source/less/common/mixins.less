@@ -1,21 +1,6 @@
-.button {
-  display: block;
-  width: 280px;
-  height: 40px;
-  padding-top: 10px;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  .text-transform;
-  color: @white;
-  background-color: @main-color;
-  border: none;
-  box-sizing: border-box;
-}
-
-.padding {
-  padding-left: 20px;
-  padding-right: 20px;
+.padding (@value) {
+  padding-left: @value;
+  padding-right: @value;
 }
 
 .text-transform {
@@ -25,4 +10,12 @@
 .pseudo {
   content: "";
   position: absolute;
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+}
+
+.arial {
+  font-family: "Arial", sans-serif;
 }

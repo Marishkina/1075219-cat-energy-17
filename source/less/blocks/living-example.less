@@ -1,6 +1,10 @@
 .living-example {
-  .padding;
+  width: 320px;
+  margin: 0 auto;
   background-color: @light-grey;
+  padding: 0;
+  padding-top: 2px;
+  height: 702px;
 }
 
 .living-example__title {
@@ -21,4 +25,19 @@
   line-height: 20px;
   color: @black;
   .text-transform;
+}
+
+@media (min-width: @tablet-width) {
+  .living-example {
+    width: 768px;
+    height: 1080px;
+    background-color: @light-grey;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .living-example {
+    width: 1440px;
+    height: 578px;
+  }
 }

@@ -1,5 +1,24 @@
 .button {
-  .button;
+  display: block;
+  width: 280px;
+  height: 40px;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  .oswald;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  .text-transform;
+  text-decoration: none;
+
+  color: @white;
+  background-color: @main-color;
+  border: none;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--font-size {
@@ -9,6 +28,12 @@
 }
 
 .button--grey {
+  padding-top: 0;
+
   background-color: @light-grey;
   color: @grey;
+
+  &:active {
+    color: rgba(128, 128, 128, 0.3);
+  }
 }
