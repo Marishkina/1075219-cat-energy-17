@@ -75,6 +75,21 @@
       background-color: @main-color;
     }
   }
+
+  .site-list__item--active-catalog {
+    position: relative;
+
+    &::after {
+      .pseudo;
+
+      height: 2px;
+      width: auto;
+      right: 0;
+      bottom: 12px;
+      left: 0;
+      background-color: @main-color;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
