@@ -1,0 +1,76 @@
+.form-group {
+  padding-bottom: 5px;
+  padding-top: 12px;
+}
+
+.form-group__title {
+  position: relative;
+
+  margin: 0;
+  padding-bottom: 32px;
+
+  .oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+
+  &::after {
+    .pseudo;
+    top: 13px;
+    right: -20px;
+
+    width: 99px;
+    height: 3px;
+
+    background-color: @main-color;
+  }
+}
+
+.form-group__title--comments {
+  &::after {
+    .pseudo;
+    top: 13px;
+    right: -20px;
+
+    width: 158px;
+    height: 3px;
+
+    background-color: @main-color;
+  }
+}
+
+.form-group__text-area {
+
+  padding-top: 10px;
+  .padding (13px);
+  box-sizing: border-box;
+
+  .oswald;
+  font-size: 16px;
+  font-weight: 400;
+  .text-transform;
+  color: @grey;
+}
+
+.form-group__title--additional {
+  padding-top: 2px;
+  padding-bottom: 40px;
+
+  &::after {
+    .pseudo;
+    top: 15px;
+    right: -20px;
+
+    width: 136px;
+    height: 3px;
+
+    background-color: @main-color;
+  }
+}
+
+.form-group--checkbox {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 18px;
+}
