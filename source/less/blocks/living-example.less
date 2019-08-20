@@ -1,13 +1,12 @@
 .living-example {
   padding: 0;
-  margin: 0;
+
+  background-color: @light-grey;
 }
 
 .living-example__wrapper {
-  padding-top: 15px;
+  padding-top: 36px;
   padding-bottom: 35px;
-
-  background-color: @light-grey;
 }
 
 .living-example__title {
@@ -95,13 +94,15 @@
 }
 
 @media (min-width: @tablet-width) {
+  .living-example {
+    background: linear-gradient(to bottom, #ffffff 57.3%, @light-grey 57.3%);
+  }
+
   .living-example__wrapper {
     position: relative;
 
     padding-top: 45px;
     padding-bottom: 73px;
-
-    background: linear-gradient(to bottom, #ffffff 57.3%, @light-grey 57.3%);
   }
 
   .living-example__title {
@@ -166,14 +167,14 @@
 @media (min-width: @desktop-width) {
   .living-example__wrapper {
     padding-top: 0;
-    padding-bottom: 43px;
+    padding-bottom: 40px;
     margin-top: -8px;
 
     background: linear-gradient(to bottom, #ffffff 24.2%, @light-grey 24.2%);
   }
 
   .living-example__title {
-    padding-bottom: 145px;
+    padding-bottom: 146px;
   }
 
   .living-example__legend {
