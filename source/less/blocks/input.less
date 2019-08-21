@@ -14,9 +14,12 @@
 
 .input__input-field {
   flex-grow: 1;
+
+  height: 45px;
   .padding (15px);
   padding-top: 17px;
   padding-bottom: 13px;
+  margin-right: 0;
   box-sizing: border-box;
 
   border: 1px solid rgba(128, 128, 128, 0.1);
@@ -26,5 +29,25 @@
     font-size: 16px;
     .text-transform;
     color: @grey;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .input__label {
+    margin-bottom: 23px;
+    margin-right: 15px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .input__input-field {
+    height: 52px;
+    padding-left: 25px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }

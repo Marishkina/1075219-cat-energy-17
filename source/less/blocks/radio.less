@@ -47,3 +47,40 @@
 .radio__control[type="radio"]:checked ~ .radio__label::after {
   transform: scale(1);
 }
+
+@media (min-width: @tablet-width) {
+  .radio {
+    margin-bottom: 22px;
+  }
+
+  .radio__label {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      .pseudo;
+      top: -12px;
+      left: -12px;
+
+      width: 40px;
+      height: 40px;
+
+      border-radius: 50%;
+      border: 1px solid rgba(128, 128, 128, 0.1);
+    }
+
+    &::after {
+      .pseudo;
+      top: 1px;
+      left: 0;
+
+      width: 18px;
+      height: 18px;
+
+      border-radius: 50%;
+      background-color: @main-color;
+
+      transform: scale(0);
+    }
+  }
+}
