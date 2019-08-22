@@ -1,12 +1,37 @@
 .map {
-  min-height: 362px;
-  width: 320px;
+  height: 362px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
 }
 
 .map__iframe {
   border: 0;
   width: 100%;
-  min-height: 362px;
+  height: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    height: 398px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
+  }
 }

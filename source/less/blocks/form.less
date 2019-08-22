@@ -1,0 +1,144 @@
+.form__title {
+  padding-top: 15px;
+  padding-bottom: 25px;
+
+  .oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+
+  border-top: 1px solid rgba(128, 128, 128, 0.1);
+}
+
+.form__intro {
+  padding-bottom: 21px;
+
+  .oswald;
+  .text-transform;
+}
+
+.form__group {
+  padding-bottom: 12px;
+  padding-top: 16px;
+
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+}
+
+.form__button {
+  padding-top: 0;
+}
+
+.form__note {
+  margin: 0;
+  padding-top: 17px;
+  .padding (20px);
+  padding-bottom: 32px;
+
+  .arial;
+  line-height: 16px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .form__title {
+    padding-top: 50px;
+    padding-bottom: 55px;
+
+    font-size: 60px;
+
+    border-top: none;
+  }
+
+  .form__intro {
+    padding-bottom: 50px;
+    padding-left: 110px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__group {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+
+    border-bottom: none;
+  }
+
+  .form__group--radio {
+    width: 630px;
+    padding-top: 25px;
+    padding-bottom: 14px;
+    margin-bottom: 35px;
+
+    border: 1px solid rgba(128, 128, 128, 0.1);
+  }
+
+  .form__item {
+    display: flex;
+  }
+
+  .form__button {
+    width: 283px;
+    height: 52px;
+    margin-bottom: 72px;
+    margin-left: 42px;
+    margin-top: 2px;
+    margin-right: 47px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__note {
+    padding-top: 13px;
+
+    font-size: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__group {
+    padding-bottom: 14px;
+    padding-top: 8px;
+    .padding (0);
+  }
+
+  .form__title {
+    padding-top: 0;
+  }
+
+  .form__group__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__group--input,
+  .form__group--radio {
+    width: 570px;
+  }
+
+  .form__group--input {
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-left: 80px;
+    box-sizing: content-box;
+  }
+
+  .form__group--radio {
+    margin-right: 110px;
+    margin-top: 15px;
+    padding-left: 39px;
+    padding-top: 24px;
+    box-sizing: border-box;
+  }
+
+  .form__button {
+    width: 568px;
+    margin-bottom: 82px;
+    margin-left: 0;
+    margin-right: 70px;
+  }
+}

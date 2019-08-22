@@ -1,23 +1,139 @@
 .footer__contacts {
+  display: flex;
+  justify-content: space-between;
+
   min-height: 114px;
-  .padding;
 }
 
 .footer__title {
-  width: 293px;
+  width: 192px;
+  margin: 0;
+  padding-top: 28px;
+
+  .oswald;
   font-size: 16px;
   line-height: 20px;
-  color: @black-color;
+  font-weight: 400;
+  color: @black;
   .text-transform;
 }
 
 .footer__address {
-  width: 140px;
-  font-family: Arial;
+  width: 185px;
+  padding-top: 14px;
+
+  .arial;
   font-size: 14px;
   line-height: 20px;
+  text-align: left;
 }
 
 .footer__color-wrapper {
+  padding-top: 40px;
+  padding-bottom: 18px;
+}
+
+.footer__logo {
+  display: block;
+  padding-bottom: 28px;
+
+  text-align: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.footer__contacts--background-color {
   background-color: @light-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .footer__contacts {
+    padding-bottom: 59px;
+  }
+
+  .footer__title {
+    width: 203px;
+    margin-left: 42px;
+    margin-top: 38px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .footer__address {
+    width: 166px;
+    margin-right: 42px;
+    margin-top: 50px;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .footer__color-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 50px;
+  }
+
+  .footer__logo {
+    padding-top: 24px;
+    padding-bottom: 0;
+
+    border: none;
+  }
+
+  .copyright {
+    width: 165px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    position: relative;
+  }
+
+  .footer__contacts {
+    position: absolute;
+
+    width: 570px;
+    margin-top: 96px;
+    margin-left: 110px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-left: 75px;
+    padding-right: 78px;
+    box-sizing: border-box;
+
+    background-color: @white;
+  }
+
+  .footer__title {
+    margin: 0;
+    padding: 0;
+    padding-top: 4px;
+  }
+
+  .footer__address {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .footer__color-wrapper {
+    padding-bottom: 45px;
+
+    &--catalog {
+      padding-top: 50px;
+    }
+  }
 }
