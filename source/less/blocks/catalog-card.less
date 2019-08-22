@@ -40,12 +40,11 @@
   margin-bottom: 13px;
 
   .oswald;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  .text-transform;
-
+  font-weight: 400;
   color: @black;
+  .text-transform;
 }
 
 .catalog-card__list {
@@ -70,27 +69,16 @@
   margin-right: 60px;
 }
 
-.catalog-card--background-color {
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.catalog-card__button--width {
-  margin: 0;
-}
-
 .catalog-card__title--text-align {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
   padding-top: 80px;
-  box-sizing: border-box;
 
   text-align: center;
 }
 
 .catalog-card__comment {
   margin: 0;
-  margin-bottom: 21px;
-  box-sizing: border-box;
+  margin-bottom: 20px;
 
   .arial;
   font-size: 12px;
@@ -110,10 +98,6 @@
     &::before {
       display: none;
     }
-
-    & br {
-      display: none;
-    }
   }
 
   .catalog-card__wrapper {
@@ -123,7 +107,7 @@
     position: relative;
 
     .padding (38px);
-    padding-top: 160px;
+    padding-top: 235px;
   }
 
   .catalog-card__img,
@@ -134,8 +118,8 @@
     width: 324px;
   }
 
-  .catalog-card__description {
-    padding-top: 99px;
+  .catalog-card__title br {
+    display: none;
   }
 
   .catalog-card__title {
@@ -150,7 +134,6 @@
   .catalog-card__type,
   .catalog-card__data {
     font-size: 16px;
-
     margin-bottom: 16px;
   }
 
@@ -172,7 +155,7 @@
 
   .catalog-card__list {
     width: 249px;
-    padding-bottom: 25px;
+    padding-bottom: 26px;
   }
 
   .catalog-card__button--width {
@@ -181,7 +164,7 @@
   }
 
   .catalog-card--background-color {
-    height: 432px;
+    min-height: 432px;
     margin-top: 95px;
     padding-top: 83px;
 
@@ -190,13 +173,13 @@
   }
 
   .catalog-card__title--text-align {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   .catalog-card__comment {
     width: 170px;
     margin: 0 auto;
-    margin-bottom: 85px;
+    margin-bottom: 84px;
 
     font-size: 16px;
     line-height: 20px;
@@ -206,11 +189,12 @@
 @media (min-width: @desktop-width) {
   .catalog-card {
     width: 245px;
-    margin-bottom: 47px;
+    margin-bottom: 48px;
   }
 
   .catalog-card__img,
   .catalog-card__link {
+    bottom: 112px;
     width: 245px;
   }
 

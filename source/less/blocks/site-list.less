@@ -1,39 +1,36 @@
 .site-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .site-list__item {
-  padding-top: 22px;
-  padding-bottom: 23px;
-  box-sizing: border-box;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
-  .text-transform;
-
   border-top: 1px solid rgba(128, 128, 128, 0.1);
 }
 
 .site-list__link {
   display: block;
 
+  padding-top: 23px;
+  margin-bottom: 22px;
+  box-sizing: border-box;
+
   .oswald;
-  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  text-align: center;
+  font-weight: 500;
+  .text-transform;
   text-decoration: none;
+  text-align: center;
+
   color: @black;
 
   &:hover {
-    opacity: 0.8;
+    color: rgba(0, 0, 0, 0.6);
   }
 
   &:active {
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -42,46 +39,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+
+    width: 500px;
+    padding-top: 20px;
   }
 
   .site-list__link {
     padding: 0;
-    padding-right: 0;
-
     font-size: 18px;
     font-weight: 400;
     line-height: 24.86px;
+
+    padding-right: 0;
   }
 
   .site-list__item {
-    padding-top: 18px;
+    margin-left: 35px;
+
     border-top: none;
-    margin-left: 36px;
-
-    &--active-catalog {
-      position: relative;
-
-      &::after {
-        .pseudo;
-        right: 0;
-        bottom: 12px;
-        left: 0;
-
-        height: 2px;
-
-        background-color: @main-color;
-      }
-    }
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .site-list__link {
-    font-size: 20px;
-  }
-
-  .site-list__item {
-    margin-left: 34px;
   }
 
   .site-list__item--active {
@@ -95,12 +70,28 @@
       right: 0;
       bottom: 12px;
       left: 0;
+      background-color: @main-color;
+    }
+  }
+}
 
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 520px;
+  }
+
+  .site-list__link {
+    font-size: 20px;
+  }
+
+  .site-list__item--active {
+    &::after {
       background-color: @white;
     }
   }
 
-  .site-list__item--active-catalog {
+  .site-list__item--active-catalog,
+  .site-list__item--active-form {
     position: relative;
 
     &::after {

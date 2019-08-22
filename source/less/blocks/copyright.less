@@ -2,8 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 30px;
-  padding-top: 13px;
+  padding-top: 12px;
 }
 
 .copyright__link {
@@ -13,7 +12,11 @@
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
-  color: @black;
+  color: @grey;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   &:active {
     opacity: 0.6;
@@ -36,12 +39,7 @@
 
 @media (min-width: @tablet-width) {
   .copyright {
-    padding: 0;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .footer__color-wrapper {
-    padding-top: 52px;
+    padding-top: 10px;
+    padding-bottom: 0;
   }
 }

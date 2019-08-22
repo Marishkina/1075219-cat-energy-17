@@ -2,39 +2,40 @@
   display: flex;
   justify-content: space-between;
 
-  padding-top: 30px;
-  padding-bottom: 25px;
+  min-height: 114px;
 }
 
 .footer__title {
-  width: 130px;
+  width: 192px;
   margin: 0;
+  padding-top: 28px;
 
   .oswald;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: @black;
   .text-transform;
 }
 
 .footer__address {
-  width: 140px;
-  margin: 0;
+  width: 185px;
+  padding-top: 14px;
 
   .arial;
   font-size: 14px;
   line-height: 20px;
+  text-align: left;
 }
 
 .footer__color-wrapper {
-  background-color: @light-grey;
+  padding-top: 40px;
+  padding-bottom: 18px;
 }
 
 .footer__logo {
   display: block;
-  padding-top: 36px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 
   text-align: center;
   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
@@ -48,44 +49,51 @@
   }
 }
 
+.footer__contacts--background-color {
+  background-color: @light-grey;
+}
+
 @media (min-width: @tablet-width) {
   .footer__contacts {
-    padding-top: 64px;
-    .padding (42px);
-    padding-bottom: 62px;
-    box-sizing: border-box;
+    padding-bottom: 59px;
   }
 
   .footer__title {
-    width: 160px;
+    width: 203px;
+    margin-left: 42px;
+    margin-top: 38px;
 
     font-size: 20px;
+    font-weight: 400;
     line-height: 25px;
   }
 
   .footer__address {
-    width: 180px;
+    width: 166px;
+    margin-right: 42px;
+    margin-top: 50px;
 
     font-size: 16px;
+    line-height: 20px;
     text-align: right;
-  }
-
-  .footer__logo {
-    padding: 0;
-    padding-top: 14px;
-    border-bottom: none;
   }
 
   .footer__color-wrapper {
     display: flex;
     justify-content: space-between;
 
-    padding-top: 48px;
     padding-bottom: 50px;
   }
 
-  .footer__contacts--background-color {
-    background-color: @light-grey;
+  .footer__logo {
+    padding-top: 24px;
+    padding-bottom: 0;
+
+    border: none;
+  }
+
+  .copyright {
+    width: 165px;
   }
 }
 
@@ -96,17 +104,36 @@
 
   .footer__contacts {
     position: absolute;
-    top: 96px;
-    left: 110px;
 
     width: 570px;
-    padding-left: 76px;
-    padding-right: 64px;
+    margin-top: 96px;
+    margin-left: 110px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-left: 75px;
+    padding-right: 78px;
+    box-sizing: border-box;
 
     background-color: @white;
   }
 
+  .footer__title {
+    margin: 0;
+    padding: 0;
+    padding-top: 4px;
+  }
+
   .footer__address {
+    margin: 0;
+    padding: 0;
     text-align: left;
+  }
+
+  .footer__color-wrapper {
+    padding-bottom: 45px;
+
+    &--catalog {
+      padding-top: 50px;
+    }
   }
 }

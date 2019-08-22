@@ -2,19 +2,25 @@
   display: block;
   width: 280px;
   height: 40px;
+  padding: 0;
   padding-top: 10px;
-  box-sizing: border-box;
 
   .oswald;
   font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
   text-align: center;
   .text-transform;
   text-decoration: none;
-
   color: @white;
+
   background-color: @main-color;
   border: none;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
@@ -24,16 +30,20 @@
 .button--font-size {
   font-size: 14px;
   line-height: 18px;
+
   text-decoration: none;
 }
 
 .button--grey {
-  padding-top: 0;
-
+  padding: 0;
   background-color: @light-grey;
   color: @grey;
 
+  &:hover {
+    background-color: #ebebeb;
+  }
+
   &:active {
-    color: rgba(128, 128, 128, 0.3);
+    color: rgba(68, 68, 68, 0.3);
   }
 }
