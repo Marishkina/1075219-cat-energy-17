@@ -1,6 +1,6 @@
 .form-group {
   padding-bottom: 5px;
-  padding-top: 12px;
+  padding-top: 10px;
 }
 
 .form-group__title {
@@ -16,7 +16,7 @@
 
   &::after {
     .pseudo;
-    top: 13px;
+    top: 14px;
     right: -20px;
 
     width: 99px;
@@ -40,6 +40,7 @@
 }
 
 .form-group__text-area {
+  width: 280px;
   min-height: 150px;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -51,11 +52,27 @@
   font-weight: 400;
   .text-transform;
   color: @grey;
+
+  border: 1px solid rgba(128, 128, 128, 0.1);
+
+  &::placeholder {
+    .oswald;
+    font-size: 16px;
+    font-weight: 400;
+    .text-transform;
+    color: rgba(68, 68, 68, 0.6);
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid @grey;
+    outline: none;
+  }
 }
 
 .form-group__title--additional {
   padding-top: 12px;
-  padding-bottom: 40px;
+  padding-bottom: 26px;
 
   &::after {
     .pseudo;
@@ -84,6 +101,7 @@
 
   .form-group__title {
     padding-bottom: 75px;
+    padding-left: 14px;
 
     font-size: 36px;
     line-height: 36px;
@@ -91,7 +109,7 @@
     &::before {
       .pseudo;
       top: 21px;
-      left: -70px;
+      left: -55px;
 
       width: 30px;
       height: 3px;
@@ -127,16 +145,21 @@
   .form-group__text-area {
     width: 630px;
     min-height: 174px;
-    padding-left: 15px;
+    .padding (34px);
     box-sizing: border-box;
 
     font-size: 20px;
     line-height: 30px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   .form-group__title--additional {
     padding-top: 18px;
-    padding-bottom: 65px;
+    padding-bottom: 50px;
 
     &::before {
       top: 41px;
@@ -158,19 +181,17 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-
-    padding: 0;
-    margin: 0;
   }
 
   .form-group--checkbox {
     padding-top: 25px;
-    padding-bottom: 12px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-group__title {
+    padding-left: 0;
+
     &::before {
       left: -110px;
 
@@ -210,6 +231,7 @@
 
   .form-group__text-area {
     width: 1220px;
+    .padding (18px);
   }
 
   .form-group__title--additional {

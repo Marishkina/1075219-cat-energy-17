@@ -3,12 +3,16 @@
   justify-content: space-between;
 
   min-height: 114px;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  box-sizing: border-box;
 }
 
 .footer__title {
   width: 192px;
   margin: 0;
-  padding-top: 28px;
+  padding-top: 14px;
 
   .oswald;
   font-size: 16px;
@@ -20,17 +24,22 @@
 
 .footer__address {
   width: 185px;
-  padding-top: 14px;
 
   .arial;
   font-size: 14px;
   line-height: 20px;
   text-align: left;
+
+  & br {
+    display: none;
+  }
 }
 
 .footer__color-wrapper {
-  padding-top: 40px;
+  padding-top: 38px;
   padding-bottom: 18px;
+
+  background-color: @light-grey;
 }
 
 .footer__logo {
@@ -55,13 +64,14 @@
 
 @media (min-width: @tablet-width) {
   .footer__contacts {
-    padding-bottom: 59px;
+    padding-bottom: 40px;
+    padding-top: 48px;
   }
 
   .footer__title {
     width: 203px;
     margin-left: 42px;
-    margin-top: 38px;
+    padding-top: 17px;
 
     font-size: 20px;
     font-weight: 400;
@@ -71,18 +81,23 @@
   .footer__address {
     width: 166px;
     margin-right: 42px;
-    margin-top: 50px;
 
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+
+    & br {
+      display: block;
+    }
   }
 
   .footer__color-wrapper {
+    padding-bottom: 50px;
+  }
+
+  .footer__links {
     display: flex;
     justify-content: space-between;
-
-    padding-bottom: 50px;
   }
 
   .footer__logo {
@@ -126,6 +141,7 @@
   .footer__address {
     margin: 0;
     padding: 0;
+    padding-top: 2px;
     text-align: left;
   }
 
@@ -133,7 +149,7 @@
     padding-bottom: 45px;
 
     &--catalog {
-      padding-top: 50px;
+      padding-top: 45px;
     }
   }
 }

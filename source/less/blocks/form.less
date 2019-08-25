@@ -1,3 +1,7 @@
+.form {
+  border-top: 1px solid rgba(128, 128, 128, 0.1);
+}
+
 .form__title {
   padding-top: 15px;
   padding-bottom: 25px;
@@ -6,8 +10,10 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
+}
 
-  border-top: 1px solid rgba(128, 128, 128, 0.1);
+.form__group-wrapper {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
 }
 
 .form__intro {
@@ -18,10 +24,12 @@
 }
 
 .form__group {
-  padding-bottom: 12px;
-  padding-top: 16px;
+  padding-bottom: 13px;
+  padding-top: 14px;
+}
 
-  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+.form__group--radio {
+  padding-top: 19px;
 }
 
 .form__button {
@@ -40,6 +48,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form {
+    border-top: none;
+  }
+
   .form__title {
     padding-top: 50px;
     padding-bottom: 55px;
@@ -47,6 +59,10 @@
     font-size: 60px;
 
     border-top: none;
+  }
+
+  .form__group-wrapper {
+    border-bottom: none;
   }
 
   .form__intro {
@@ -58,12 +74,16 @@
   }
 
   .form__group {
-    padding-left: 40px;
+    padding-left: 25px;
     padding-right: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 0;
     box-sizing: border-box;
 
     border-bottom: none;
+  }
+
+  .form__group--input {
+    padding-bottom: 50px;
   }
 
   .form__group--radio {
@@ -77,6 +97,8 @@
 
   .form__item {
     display: flex;
+
+    padding-top: 16px;
   }
 
   .form__button {
@@ -109,7 +131,7 @@
     padding-top: 0;
   }
 
-  .form__group__wrapper {
+  .form__group-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -133,6 +155,10 @@
     padding-left: 39px;
     padding-top: 24px;
     box-sizing: border-box;
+  }
+
+  .form__item {
+    padding-top: 0;
   }
 
   .form__button {

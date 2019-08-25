@@ -1,13 +1,13 @@
 .radio {
   display: flex;
-  margin-bottom: 14px;
 }
 
 .radio__label {
   position: relative;
 
-  margin-top: 10px;
-  padding-left: 45px;
+  padding-top: 5px;
+  padding-left: 49px;
+  padding-bottom: 20px;
 
   .oswald;
   font-size: 16px;
@@ -15,11 +15,11 @@
 
   &::before {
     .pseudo;
-    top: -8px;
-    left: -1px;
+    top: 0;
+    left: 3px;
 
-    width: 30px;
-    height: 30px;
+    width: 29px;
+    height: 29px;
 
     border-radius: 50%;
     border: 1px solid rgba(128, 128, 128, 0.1);
@@ -27,8 +27,8 @@
 
   &::after {
     .pseudo;
-    top: 1px;
-    left: 9px;
+    top: 9px;
+    left: 13px;
 
     width: 12px;
     height: 12px;
@@ -38,10 +38,21 @@
 
     transform: scale(0);
   }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+    opacity: 0.3;
+  }
+}
+
+.radio__control[type="radio"]:focus ~ .radio__label {
+  color: rgba(68, 68, 68, 0.3);
+  opacity: 0.3;
 }
 
 .radio__control[type="radio"] {
-  display: none;
+  opacity: 0;
+  margin-left: -20px;
 }
 
 .radio__control[type="radio"]:checked ~ .radio__label::after {
@@ -49,18 +60,19 @@
 }
 
 @media (min-width: @tablet-width) {
-  .radio {
-    margin-bottom: 22px;
-  }
-
   .radio__label {
+    padding-top: 12px;
+    padding-left: 68px;
+    padding-bottom: 22px;
+    margin: 0;
+
     font-size: 20px;
     line-height: 20px;
 
     &::before {
       .pseudo;
-      top: -12px;
-      left: -12px;
+      top: 2px;
+      left: 7px;
 
       width: 40px;
       height: 40px;
@@ -71,8 +83,8 @@
 
     &::after {
       .pseudo;
-      top: 1px;
-      left: 0;
+      top: 13px;
+      left: 19px;
 
       width: 18px;
       height: 18px;
@@ -81,6 +93,23 @@
       background-color: @main-color;
 
       transform: scale(0);
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .radio__label {
+    padding-left: 52px;
+    padding-top: 11px;
+
+    &::before {
+      top: 0;
+      left: -8px;
+    }
+
+    &::after {
+      top: 12px;
+      left: 4px;
     }
   }
 }
