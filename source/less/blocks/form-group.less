@@ -43,7 +43,7 @@
   width: 280px;
   min-height: 150px;
   padding-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 12px;
   .padding (13px);
   box-sizing: border-box;
 
@@ -76,7 +76,7 @@
 
   &::after {
     .pseudo;
-    top: 25px;
+    top: 27px;
     right: -20px;
 
     width: 136px;
@@ -101,7 +101,7 @@
 
   .form-group__title {
     padding-bottom: 75px;
-    padding-left: 14px;
+    padding-left: 0;
 
     font-size: 36px;
     line-height: 36px;
@@ -109,7 +109,7 @@
     &::before {
       .pseudo;
       top: 21px;
-      left: -55px;
+      left: -71px;
 
       width: 30px;
       height: 3px;
@@ -120,7 +120,7 @@
     &::after {
       .pseudo;
       top: 21px;
-      right: -70px;
+      right: -69px;
 
       width: 146px;
       height: 3px;
@@ -145,7 +145,9 @@
   .form-group__text-area {
     width: 630px;
     min-height: 174px;
-    .padding (34px);
+    .padding (18px);
+    padding-top: 10px;
+    padding-bottom: 10px;
     box-sizing: border-box;
 
     font-size: 20px;
@@ -189,6 +191,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form-group {
+    padding-top: 28px;
+  }
+
   .form-group__title {
     padding-left: 0;
 
@@ -235,14 +241,14 @@
   }
 
   .form-group__title--additional {
-    padding-top: 21px;
+    padding-top: 16px;
 
     &::before {
-      top: 43px;
+      top: 38px;
     }
 
     &::after {
-      top: 43px;
+      top: 38px;
       right: -110px;
 
       width: 1080px;

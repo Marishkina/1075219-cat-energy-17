@@ -147,6 +147,53 @@
     & br {
       display: block;
     }
+
+    &--leaf,
+    &--powder,
+    &--dining,
+    &--clock {
+      &::after {
+        position: absolute;
+        top: 88px;
+        z-index: -1;
+
+        width: 144.19px;
+        height: 305.53px;
+
+        .oswald;
+        font-weight: 400;
+        font-size: 281.07px;
+        color: @light-grey;
+      }
+    }
+
+    &--leaf {
+      &::after {
+        content: "1";
+        left: 119px;
+      }
+    }
+
+    &--powder {
+      &::after {
+        content: "2";
+        left: 110px;
+      }
+    }
+
+    &--dining {
+      &::after {
+        content: "3";
+        left: 114px;
+      }
+    }
+
+    &--clock {
+      &::after {
+        content: "4";
+        left: 113px;
+      }
+    }
   }
 }
 
@@ -156,7 +203,8 @@
   }
 
   .advantages__wrapper {
-    padding-top: 72px;
+    padding: 0;
+    padding-top: 74px;
     padding-bottom: 0;
   }
 

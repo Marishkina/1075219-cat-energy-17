@@ -14,6 +14,7 @@
 
 .form__group-wrapper {
   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+  border-top: 1px solid rgba(128, 128, 128, 0.1);
 }
 
 .form__intro {
@@ -24,12 +25,12 @@
 }
 
 .form__group {
-  padding-bottom: 13px;
-  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-top: 15px;
 }
 
 .form__group--radio {
-  padding-top: 19px;
+  padding-top: 22px;
 }
 
 .form__button {
@@ -39,12 +40,16 @@
 .form__note {
   margin: 0;
   padding-top: 17px;
-  .padding (20px);
+  .padding (26px);
   padding-bottom: 32px;
 
   .arial;
   line-height: 16px;
   text-align: center;
+}
+
+.form__item {
+  padding-top: 5px;
 }
 
 @media (min-width: @tablet-width) {
@@ -63,20 +68,23 @@
 
   .form__group-wrapper {
     border-bottom: none;
+    border-top: none;
   }
 
   .form__intro {
     padding-bottom: 50px;
-    padding-left: 110px;
+    padding-left: 40px;
+    box-sizing: border-box;
 
     font-size: 20px;
     line-height: 30px;
   }
 
   .form__group {
-    padding-left: 25px;
+    padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 0;
+    padding-top: 15px;
     box-sizing: border-box;
 
     border-bottom: none;
@@ -90,6 +98,7 @@
     width: 630px;
     padding-top: 25px;
     padding-bottom: 14px;
+    padding-left: 25px;
     margin-bottom: 35px;
 
     border: 1px solid rgba(128, 128, 128, 0.1);
@@ -114,7 +123,7 @@
   }
 
   .form__note {
-    padding-top: 13px;
+    padding-left: 18px;
 
     font-size: 16px;
   }
@@ -129,12 +138,18 @@
 
   .form__title {
     padding-top: 0;
+    padding-left: 0;
+    box-sizing: border-box;
   }
 
-  .form__group-wrapper {
+  .form__intro {
+    padding-left: 0;
+  }
+
+  .form__group--wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .form__group--input,
@@ -143,14 +158,16 @@
   }
 
   .form__group--input {
+    margin: 0;
+    margin-right: 30px;
     padding-right: 20px;
     padding-top: 15px;
-    padding-left: 80px;
     box-sizing: content-box;
   }
 
   .form__group--radio {
-    margin-right: 110px;
+    margin: 0;
+    margin-left: 30px;
     margin-top: 15px;
     padding-left: 39px;
     padding-top: 24px;
@@ -159,6 +176,7 @@
 
   .form__item {
     padding-top: 0;
+    padding-left: 82px;
   }
 
   .form__button {
@@ -166,5 +184,9 @@
     margin-bottom: 82px;
     margin-left: 0;
     margin-right: 70px;
+  }
+
+  .form__note {
+    padding-top: 14px;
   }
 }
