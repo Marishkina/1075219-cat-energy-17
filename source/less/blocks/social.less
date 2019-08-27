@@ -12,17 +12,19 @@
 
   list-style: none;
   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
-}
 
-.social__link {
-  &:hover path,
-  &:hover circle {
-    fill: #68b738;
-  }
+  &__icon--vk,
+  &__icon--instagram,
+  &__icon--fb {
+    fill: #444444;
 
-  &:active path,
-  &:active circle {
-    fill: rgba(104, 183, 56, 0.3);
+    &:hover {
+      fill: #68b738;
+    }
+
+    &:active {
+      fill: rgba(104, 183, 56, 0.3);
+    }
   }
 }
 
