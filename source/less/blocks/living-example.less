@@ -1,6 +1,4 @@
 .living-example {
-  position: relative;
-
   padding: 0;
 
   background-color: @light-grey;
@@ -48,6 +46,8 @@
 }
 
 .living-example__image {
+  position: relative;
+
   width: 320px;
   margin-left: -20px;
   margin-bottom: 27px;
@@ -55,8 +55,9 @@
 
 .living-example__img-after {
   position: absolute;
-  top: 380px;
-  left: 230px;
+
+  top: 0;
+  left: 0;
 
   opacity: 0;
 }
@@ -173,11 +174,6 @@
     margin-bottom: 17px;
   }
 
-  .living-example__img-after {
-    top: 450px;
-    left: 45px;
-  }
-
   .living-example__button {
     margin-left: 68px;
 
@@ -273,11 +269,6 @@
     position: absolute;
     top: -57px;
     right: -8px;
-  }
-
-  .living-example__img-after {
-    top: 2px;
-    left: 1px;
   }
 
   .living-example__button {

@@ -19,7 +19,8 @@
 
   height: 45px;
   padding-top: 2px;
-  .padding (14px);
+  padding-left: 14px;
+  padding-right: 45px;
   margin-right: 0;
   box-sizing: border-box;
 
@@ -29,7 +30,7 @@
   .text-transform;
   color: @grey;
 
-  border: 1px solid rgba(128, 128, 128, 0.1);
+  border: 1px solid rgba(197, 198, 198, 0.5);
 
   &::placeholder {
     .oswald;
@@ -39,9 +40,14 @@
     color: rgba(68, 68, 68, 0.6);
   }
 
+  &:hover {
+    border: 1px solid rgba(197, 198, 198, 1);
+  }
+
   &:focus,
   &:active {
-    border: 2px solid @grey;
+    border: 1px solid @grey;
+    box-shadow: inset 0 0 0 1px @grey;
     outline: none;
   }
 }
@@ -120,5 +126,9 @@
       top: 18px;
       left: 436px;
     }
+  }
+
+  .input__input-field {
+    padding-right: 55px;
   }
 }

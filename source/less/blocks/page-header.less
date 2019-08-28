@@ -173,14 +173,16 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    min-height: 696px;
-    padding-bottom: 25px;
+    position: relative;
+    padding-bottom: 18px;
     padding-top: 52px;
+    margin-bottom: 0;
 
-    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-image: url("../img/index-background-desktop@1x.jpg"),
+      linear-gradient(to right, transparent 0, @main-color 0);
     background-repeat: no-repeat;
     background-size: 720px 696px;
-    background-position: 720px 0;
+    background-position: calc(50% + 360px) top;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
@@ -225,7 +227,6 @@
   }
 
   .page-header__background {
-    width: 1300px;
     margin-left: 0;
     padding-left: 0;
   }
