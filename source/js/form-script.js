@@ -13,14 +13,14 @@ var storage = localStorage.getItem("phone");
 var isStorageSupport = true;
   var storage = "";
   try {
-   storage = localStorage.getItem("name");
-   storage = localStorage.getItem("weight");
-   storage = localStorage.getItem("age");
-   storage = localStorage.getItem("email");
-   storage = localStorage.getItem("phone");
- } catch (err) {
-   isStorageSupport = false;
- }
+    storage = localStorage.getItem("name");
+    storage = localStorage.getItem("weight");
+    storage = localStorage.getItem("age");
+    storage = localStorage.getItem("email");
+    storage = localStorage.getItem("phone");
+  }  catch (err) {
+    isStorageSupport = false;
+  }
 
 // form.addEventListener("click", function (evt) {
 //   evt.preventDefault();

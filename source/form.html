@@ -51,15 +51,15 @@
             <div class="form__group form__group--input container">
               <label class="input">
                 <span class="input__label">Имя:<sup>*</sup></span>
-                <input class="input__input-field input-field__name" type="text" id="input-name" name="input-name" placeholder="Барсик">
+                <input class="input__input-field input-field--name" type="text" id="input-name" name="input-name" placeholder="Барсик">
               </label>
               <label class="input">
                 <span class="input__label">Вес (кг):<sup>*</sup></span>
-                <input class="input__input-field input-field__weight" type="text"   id="input-weight" name="input-weight" placeholder="7">
+                <input class="input__input-field input-field--weight" type="text"   id="input-weight" name="input-weight" placeholder="7">
               </label>
               <label class="input">
                 <span class="input__label">Возраст (лет):<sup>*</sup></span>
-                <input class="input__input-field  input-field__age" type="text" id="input-age" name="input-age" placeholder="7">
+                <input class="input__input-field  input-field--age" type="text" id="input-age" name="input-age" placeholder="7">
               </label>
             </div>
             <div class="form__group-wrapper">
@@ -84,7 +84,7 @@
               <h2 class="form-group__title">Контактные данные (владельца кота)</h2>
               <div class=form-group__wrapper>
                 <label class="input form-group__input">
-                  <span class="input__label">E-mail:<sup>*</sup></span>
+                  <span class="input__label input__label--email">E-mail:<sup>*</sup></span>
                   <div class="input__wrapper">
                     <input class="input__input-field input-field--email" type="email" id="input-email" name="input-email" placeholder="kuklachev@gmail.com">
                     <a class="input__link" href="#">
@@ -95,9 +95,9 @@
                   </div>
                 </label>
                 <label class="input form-group__input">
-                  <span class="input__label">Телефон:<sup>*</sup></span>
+                  <span class="input__label input__label--phone">Телефон:<sup>*</sup></span>
                   <div class="input__wrapper">
-                    <input class="input__input-field input-field--phone" type="tel" id="input-tel" name="input-tel" pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8(960)900-60-90">
+                    <input class="input__input-field input-field--phone" type="tel" id="input-tel" name="input-tel" pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8 (960) 900-60-90">
                     <a class="input__link input__link--phone" href="#">
                       <svg class="input__icon--phone" width="20" height="20">
                         <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -143,7 +143,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__contacts--background-color footer__contacts-wrapper container">
+      <div class="footer__contacts--background-color footer__contacts-wrapper footer__contacts--padding container">
         <div class="footer__contacts">
           <p class="footer__title">Приглашаем<br> к сотрудничеству дилеров!</p>
           <p class="footer__address">ул. Большая Конюшенная, д. 19/8<br> <br>Санкт-Петербург</p>
@@ -199,6 +199,8 @@
 
     <script src="js/script.js"></script>
     <script src="js/form-script.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
 
   </body>
 </html>

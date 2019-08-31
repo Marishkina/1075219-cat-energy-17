@@ -87,6 +87,8 @@
 @media (min-width: @tablet-width) {
   .page-header {
     position: relative;
+
+    padding-top: 25px;
   }
 
   .page-header__wrapper {
@@ -111,10 +113,11 @@
 
     width: 768px;
     min-height: 860px;
-    padding-top: 50px;
+    padding-top: 52px;
     padding-left: 88px;
     padding-right: 88px;
     margin: 0 auto;
+    margin-bottom: 2px;
     box-sizing: border-box;
   }
 
@@ -128,7 +131,7 @@
     width: 505px;
     height: 120px;
     margin: 0;
-    margin-bottom: 42px;
+    margin-bottom: 41px;
     padding: 0;
 
     font-size: 60px;
@@ -151,7 +154,7 @@
 
   .page-header__button {
     position: absolute;
-    bottom: 508px;
+    bottom: 506px;
     left: 119px;
 
     width: 245px;
@@ -163,8 +166,8 @@
   }
 
   .page-header__img {
-    top: 252px;
-    left: 30px;
+    top: 253px;
+    left: 29px;
 
     width: 709px;
     margin: 0;
@@ -175,14 +178,14 @@
   .page-header {
     position: relative;
     padding-bottom: 18px;
-    padding-top: 52px;
-    margin-bottom: 0;
+    padding-top: 54px;
+    margin-bottom: 78px;
 
     background-image: url("../img/index-background-desktop@1x.jpg"),
       linear-gradient(to right, transparent 0, @main-color 0);
     background-repeat: no-repeat;
     background-size: 720px 696px;
-    background-position: calc(50% + 360px) top;
+    background-position: calc(50% + 359px) top;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
@@ -190,9 +193,12 @@
   }
 
   .page-header--margin-bottom {
-    background-image: none;
     min-height: 59px;
-    padding-bottom: 70px;
+    padding-bottom: 69px;
+    padding-top: 53px;
+    margin-bottom: 0;
+
+    background-image: none;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: none;
@@ -240,7 +246,7 @@
   }
 
   .page-header__button {
-    top: 336px;
+    top: 337px;
     left: 120px;
   }
 }
