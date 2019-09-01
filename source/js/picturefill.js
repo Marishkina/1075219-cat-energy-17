@@ -1,3 +1,12 @@
+/*! picturefill - v3.0.2 - 2016-02-12
+ * https://scottjehl.github.io/picturefill/
+ * Copyright (c) 2016 https://github.com/scottjehl/picturefill/blob/master/Authors.txt; Licensed MIT
+ */
+/*! Gecko-Picture - v1.0
+ * https://github.com/scottjehl/picturefill/tree/3.0/src/plugins/gecko-picture
+ * Firefox's early picture implementation (prior to FF41) is static and does
+ * not react to viewport changes. This tiny module fixes this.
+ */
 (function(window) {
   /*jshint eqnull:true */
   var ua = navigator.userAgent;
@@ -17,14 +26,14 @@
 
           picture.insertBefore(source, picture.firstElementChild);
           setTimeout(function() {
-          picture.removeChild(source);
+            picture.removeChild(source);
           });
         } else if (!img._pfLastSize || img.offsetWidth > img._pfLastSize) {
           img._pfLastSize = img.offsetWidth;
           sizes = img.sizes;
           img.sizes += ",100vw";
           setTimeout(function() {
-          img.sizes = sizes;
+            img.sizes = sizes;
           });
         }
       };
@@ -69,7 +78,7 @@
  */
 
 (function( window, document, undefined ) {
-    / Enable strict mode
+  // Enable strict mode
   "use strict";
 
   // HTML shim|v it for old IE (IE9 will still need the HTML video tag workaround)
@@ -183,9 +192,9 @@
 
     var regLength = /^([\d\.]+)(em|vw|px)$/;
     var replace = function() {
-    var args = arguments, index = 0, string = args[0];
+      var args = arguments, index = 0, string = args[0];
       while (++index in args) {
-      string = string.replace(args[index], args[++index]);
+        string = string.replace(args[index], args[++index]);
       }
       return string;
     };
@@ -405,7 +414,7 @@
       img[ pf.ns ].curCan = candidate;
 
       if ( !candidate.res ) {
-      setResolution( candidate, candidate.set.sizes );
+        setResolution( candidate, candidate.set.sizes );
       }
     }
     return candidate;
@@ -1430,7 +1439,7 @@
     pf.fillImg = noop;
   } else {
 
-      // Set up picture polyfill by polling the document
+      //Set up picture polyfill by polling the document
     (function() {
       var isDomReady;
       var regReady = window.attachEvent ? /d$|^c/ : /d$|^c|^i/;
@@ -1440,7 +1449,7 @@
 
         timerId = setTimeout(run, readyState === "loading" ? 200 :  999);
         if ( document.body ) {
-            pf.fillImgs();
+          pf.fillImgs();
           isDomReady = isDomReady || regReady.test(readyState);
           if ( isDomReady ) {
             clearTimeout( timerId );
@@ -1454,7 +1463,7 @@
       // Also attach picturefill on resize and readystatechange
       // http://modernjavascript.blogspot.com/2013/08/building-better-debounce.html
       var debounce = function(func, wait) {
-      var timeout, timestamp;
+        var timeout, timestamp;
         var later = function() {
           var last = (new Date()) - timestamp;
 
@@ -1466,7 +1475,7 @@
           }
         };
 
-          return function() {
+        return function() {
           timestamp = new Date();
 
           if (!timeout) {
