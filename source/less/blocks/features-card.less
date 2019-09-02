@@ -1,16 +1,16 @@
 .features-card {
   position: relative;
 
-  padding-top: 30px;
-  padding-bottom: 21px;
-  .padding (20px);
+  padding-top: 31px;
+  padding-bottom: 20px;
+  .padding(20px);
   box-sizing: border-box;
 
   background-color: @light-grey;
 
   &::before {
     .pseudo;
-    top: 24px;
+    top: 25px;
     left: 22px;
 
     width: 50px;
@@ -39,7 +39,7 @@
   &::after {
     .pseudo;
     top: 35px;
-    left: 14px;
+    left: 13px;
 
     width: 67px;
     height: 28px;
@@ -59,7 +59,7 @@
 
   .oswald;
   font-size: 24px;
-  line-height: 37.02px;
+  line-height: 37px;
   font-weight: 400;
   .text-transform;
   color: @black;
@@ -75,7 +75,7 @@
   &::after {
     .pseudo;
     bottom: -23px;
-    right: 15px;
+    right: 0;
     width: 240px;
     height: 1px;
     background-color: rgba(128, 128, 128, 0.1);
@@ -86,7 +86,6 @@
   position: relative;
 
   display: block;
-
   width: 150px;
 
   .oswald;
@@ -97,10 +96,33 @@
   .text-transform;
   text-decoration: none;
 
-  background-image: url("../img/icon-right-arrow-long.svg");
-  background-repeat: no-repeat;
-  background-size: 24px 11px;
-  background-position: 96px 3px;
+  &::after {
+    .pseudo;
+    top: 4px;
+    right: 29px;
+
+    width: 24px;
+    height: 11px;
+
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    &::after {
+      right: 20px;
+
+      width: 33px;
+      height: 11px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
+
+    &:active {
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
 
   &:active {
     color: rgba(17, 17, 17, 0.3);
@@ -109,13 +131,13 @@
 
 @media (min-width: @tablet-width) {
   .features-card {
-    padding-top: 75px;
+    padding-top: 76px;
     padding-left: 53px;
     padding-right: 280px;
-    padding-bottom: 63px;
+    padding-bottom: 62px;
 
     &::before {
-      top: 90px;
+      top: 91px;
       left: 447px;
       width: 200px;
       height: 200px;
@@ -163,12 +185,21 @@
   }
 
   .features-card__link {
-    width: 300px;
+    width: 170px;
     padding-left: 0;
     font-size: 20px;
     line-height: 20px;
 
-    background-position: 128px 5px;
+    &::after {
+      top: 5px;
+      right: 18px;
+    }
+
+    &:hover {
+      &::after {
+        right: 9px;
+      }
+    }
   }
 }
 
@@ -179,6 +210,7 @@
     padding-left: 50px;
     padding-right: 55px;
     padding-bottom: 61px;
+    margin-right: 40px;
 
     &::before {
       top: 48px;
@@ -199,13 +231,14 @@
 
   .features-card--cat-pro {
     margin: 0;
+    margin-left: 40px;
 
     &::after {
       top: 70px;
       left: 34px;
 
       width: 134px;
-      height: 156px;
+      height: 56px;
     }
   }
 
@@ -215,7 +248,7 @@
   }
 
   .features-card__description {
-    margin-bottom: 32px;
+    margin-bottom: 31px;
   }
 
   .features-card__link {

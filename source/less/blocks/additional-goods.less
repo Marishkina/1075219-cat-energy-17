@@ -3,7 +3,7 @@
 }
 
 .additional-goods__wrapper {
-  padding-top: 30px;
+  padding-top: 29px;
   padding-bottom: 0;
 }
 
@@ -11,7 +11,7 @@
   position: relative;
 
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 
   .oswald;
   font-size: 24px;
@@ -20,10 +20,10 @@
 
   &::after {
     .pseudo;
-    top: 12px;
+    top: 14px;
     right: -20px;
+    left: 245px;
 
-    width: 53px;
     height: 3px;
 
     background-color: @main-color;
@@ -79,6 +79,7 @@
   padding-bottom: 43px;
   margin-top: 40px;
   margin-bottom: 35px;
+  box-sizing: border-box;
 
   border-top: 1px solid rgba(128, 128, 128, 0.1);
 
@@ -105,10 +106,10 @@
 
   &::before {
     .pseudo;
-    bottom: 123px;
-    left: 60px;
+    top: 65px;
+    left: 113px;
 
-    width: 55px;
+    width: 55.5px;
     height: 60px;
 
     background-image: url("../img/icon-gift.svg");
@@ -124,7 +125,7 @@
 
   .additional-goods__wrapper {
     padding-top: 22px;
-    padding-bottom: 69px;
+    padding-bottom: 67px;
   }
 
   .additional-goods__title {
@@ -138,9 +139,9 @@
     &::before {
       .pseudo;
       top: 22px;
-      left: -29px;
+      left: -30px;
+      right: 710px;
 
-      width: 28px;
       height: 3px;
 
       background-color: @main-color;
@@ -149,7 +150,7 @@
     &::after {
       top: 22px;
       right: -30px;
-      width: 326px;
+      left: 410px;
     }
   }
 
@@ -200,9 +201,9 @@
 
   .additional-goods__bonus {
     width: 708px;
-    margin: 0;
-    padding-left: 310px;
-    box-sizing: border-box;
+    padding-left: 335px;
+    margin-top: 2px;
+    margin-bottom: 0;
 
     border-top: none;
 
@@ -216,12 +217,13 @@
   }
 
   .additional-goods__bonus-text {
-    padding-top: 51px;
+    padding-top: 52px;
+    margin-left: 90px;
     text-align: left;
 
     &::before {
-      bottom: 8px;
-      left: -335px;
+      top: 65px;
+      left: 90px;
     }
   }
 }
@@ -229,29 +231,35 @@
 @media (min-width: @desktop-width) {
   .additional-goods {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+
+    padding: 0;
+    padding-bottom: 84px;
 
     border: none;
+    box-sizing: border-box;
   }
 
   .additional-goods__wrapper {
-    padding-top: 26px;
+    padding-top: 29px;
     padding-bottom: 0;
+    padding-right: 0;
+    margin-right: 0;
   }
 
   .additional-goods__title {
     padding: 0;
+    margin-right: 0;
 
     &::before {
       left: -110px;
-
-      width: 70px;
+      right: 1015px;
     }
 
     &::after {
-      right: -360px;
-
-      width: 958px;
+      .pseudo;
+      right: -283px;
+      left: 373px;
     }
   }
 
@@ -267,7 +275,7 @@
   .additional-goods__button {
     width: 245px;
     margin: 0;
-    margin-left: 35px;
+    margin-left: 30px;
   }
 
   .additional-goods__type {
@@ -282,7 +290,7 @@
   }
 
   .additional-goods__price {
-    width: 45px;
+    width: 50px;
     margin-left: 65px;
 
     text-align: left;
@@ -290,8 +298,9 @@
 
   .additional-goods__bonus {
     width: 245px;
-    margin-top: 140px;
+    margin-top: 144px;
     padding-left: 0;
+    padding-bottom: 0;
 
     border: none;
 
@@ -306,12 +315,14 @@
   }
 
   .additional-goods__bonus-text {
-    padding-top: 169px;
+    padding-top: 167px;
+    padding-bottom: 40px;
+    margin: 0 auto;
     text-align: center;
 
     &::before {
-      bottom: 125px;
-      left: 57px;
+      top: 65px;
+      left: 96px;
     }
   }
 }

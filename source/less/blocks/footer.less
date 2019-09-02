@@ -3,12 +3,15 @@
   justify-content: space-between;
 
   min-height: 114px;
+  padding: 0;
+  padding-top: 28px;
+  padding-bottom: 14px;
+  box-sizing: border-box;
 }
 
 .footer__title {
   width: 192px;
   margin: 0;
-  padding-top: 28px;
 
   .oswald;
   font-size: 16px;
@@ -19,8 +22,13 @@
 }
 
 .footer__address {
+  display: flex;
+  flex-direction: column;
   width: 185px;
-  padding-top: 14px;
+}
+
+.footer__footer-address {
+  margin: 0;
 
   .arial;
   font-size: 14px;
@@ -29,8 +37,10 @@
 }
 
 .footer__color-wrapper {
-  padding-top: 40px;
+  padding-top: 38px;
   padding-bottom: 18px;
+
+  background-color: @light-grey;
 }
 
 .footer__logo {
@@ -49,19 +59,20 @@
   }
 }
 
-.footer__contacts--background-color {
+.footer--background-color {
   background-color: @light-grey;
 }
 
 @media (min-width: @tablet-width) {
   .footer__contacts {
-    padding-bottom: 59px;
+    padding-bottom: 56px;
+    padding-top: 63px;
   }
 
   .footer__title {
     width: 203px;
-    margin-left: 42px;
-    margin-top: 38px;
+    margin-left: 41px;
+    padding-top: 2px;
 
     font-size: 20px;
     font-weight: 400;
@@ -69,9 +80,15 @@
   }
 
   .footer__address {
+    margin-right: 23px;
+  }
+
+  .footer__footer-address--street {
+    margin-bottom: 20px;
+  }
+
+  .footer__footer-address {
     width: 166px;
-    margin-right: 42px;
-    margin-top: 50px;
 
     font-size: 16px;
     line-height: 20px;
@@ -79,14 +96,16 @@
   }
 
   .footer__color-wrapper {
-    display: flex;
-    justify-content: space-between;
-
     padding-bottom: 50px;
   }
 
+  .footer__links {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .footer__logo {
-    padding-top: 24px;
+    padding-top: 27px;
     padding-bottom: 0;
 
     border: none;
@@ -98,7 +117,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .footer {
+  .footer__contacts-wrapper {
     position: relative;
   }
 
@@ -106,11 +125,11 @@
     position: absolute;
 
     width: 570px;
-    margin-top: 96px;
-    margin-left: 110px;
+    top: 96px;
+    left: 40px;
     padding-bottom: 60px;
     padding-top: 60px;
-    padding-left: 75px;
+    padding-left: 76px;
     padding-right: 78px;
     box-sizing: border-box;
 
@@ -120,20 +139,30 @@
   .footer__title {
     margin: 0;
     padding: 0;
-    padding-top: 4px;
+    padding-top: 5px;
   }
 
   .footer__address {
+    width: auto;
     margin: 0;
     padding: 0;
+    padding-top: 3px;
+  }
+
+  .footer__footer-address {
     text-align: left;
   }
 
   .footer__color-wrapper {
     padding-bottom: 45px;
 
-    &--catalog {
-      padding-top: 50px;
+    &--padding {
+      padding-top: 37px;
     }
+  }
+
+  .footer__links {
+    .padding(0);
+    box-sizing: border-box;
   }
 }

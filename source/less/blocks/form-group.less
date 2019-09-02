@@ -1,6 +1,6 @@
 .form-group {
   padding-bottom: 5px;
-  padding-top: 12px;
+  padding-top: 11px;
 }
 
 .form-group__title {
@@ -16,10 +16,10 @@
 
   &::after {
     .pseudo;
-    top: 13px;
+    top: 14px;
     right: -20px;
+    left: 200px;
 
-    width: 99px;
     height: 3px;
 
     background-color: @main-color;
@@ -27,12 +27,14 @@
 }
 
 .form-group__title--comments {
+  padding-top: 1px;
+
   &::after {
     .pseudo;
-    top: 13px;
+    top: 14px;
     right: -20px;
+    left: 143px;
 
-    width: 158px;
     height: 3px;
 
     background-color: @main-color;
@@ -40,10 +42,11 @@
 }
 
 .form-group__text-area {
+  width: 280px;
   min-height: 150px;
   padding-bottom: 10px;
-  padding-top: 10px;
-  .padding (13px);
+  padding-top: 11px;
+  .padding(13px);
   box-sizing: border-box;
 
   .oswald;
@@ -51,18 +54,34 @@
   font-weight: 400;
   .text-transform;
   color: @grey;
+
+  border: 1px solid rgba(128, 128, 128, 0.1);
+
+  &::placeholder {
+    .oswald;
+    font-size: 16px;
+    font-weight: 400;
+    .text-transform;
+    color: rgba(68, 68, 68, 0.6);
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid @grey;
+    outline: none;
+  }
 }
 
 .form-group__title--additional {
   padding-top: 12px;
-  padding-bottom: 40px;
+  padding-bottom: 26px;
 
   &::after {
     .pseudo;
-    top: 25px;
+    top: 26px;
     right: -20px;
+    left: 164px;
 
-    width: 136px;
     height: 3px;
 
     background-color: @main-color;
@@ -78,79 +97,78 @@
 
 @media (min-width: @tablet-width) {
   .form-group {
-    padding-top: 25px;
+    padding-top: 24px;
     padding-bottom: 20px;
   }
 
   .form-group__title {
     padding-bottom: 75px;
+    padding-left: 0;
 
     font-size: 36px;
     line-height: 36px;
 
     &::before {
       .pseudo;
-      top: 21px;
+      top: 22px;
       left: -70px;
+      right: 668px;
 
-      width: 30px;
       height: 3px;
 
       background-color: @main-color;
     }
 
     &::after {
-      .pseudo;
-      top: 21px;
+      top: 22px;
       right: -70px;
-
-      width: 146px;
-      height: 3px;
-
-      background-color: @main-color;
+      left: 555px;
     }
   }
 
   .form-group__title--comments {
-    &::after {
+    &::before {
       .pseudo;
-      top: 21px;
+      top: 23px;
+    }
+
+    &::after {
+      top: 23px;
       right: -70px;
-
-      width: 480px;
-      height: 3px;
-
-      background-color: @main-color;
+      left: 220px;
     }
   }
 
   .form-group__text-area {
     width: 630px;
     min-height: 174px;
-    padding-left: 15px;
+    .padding(19px);
+    padding-top: 10px;
+    padding-bottom: 10px;
     box-sizing: border-box;
 
     font-size: 20px;
     line-height: 30px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   .form-group__title--additional {
     padding-top: 18px;
-    padding-bottom: 65px;
+    padding-bottom: 50px;
 
     &::before {
-      top: 41px;
+      top: 40px;
     }
 
     &::after {
       .pseudo;
-      top: 41px;
+      top: 40px;
       right: -70px;
-
-      width: 447px;
-      height: 3px;
-
-      background-color: @main-color;
+      left: 253px;
     }
   }
 
@@ -158,28 +176,31 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-
-    padding: 0;
-    margin: 0;
   }
 
   .form-group--checkbox {
     padding-top: 25px;
-    padding-bottom: 12px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .form-group__title {
-    &::before {
-      left: -110px;
+  .form-group {
+    padding-top: 25px;
+  }
 
-      width: 70px;
+  .form-group__title {
+    padding-left: 0;
+
+    &::before {
+      top: 22px;
+      left: -110px;
+      right: 1260px;
     }
 
     &::after {
-      width: 778px;
-      right: -110px;
+      top: 22px;
+      right: -40px;
+      left: 553px;
     }
   }
 
@@ -201,29 +222,26 @@
     }
 
     &::after {
-      top: 25px;
-      right: -110px;
-
-      width: 1110px;
+      top: 24px;
+      left: 220px;
     }
   }
 
   .form-group__text-area {
     width: 1220px;
+    .padding(18px);
   }
 
   .form-group__title--additional {
-    padding-top: 21px;
+    padding-top: 20px;
 
     &::before {
-      top: 43px;
+      top: 42px;
     }
 
     &::after {
-      top: 43px;
-      right: -110px;
-
-      width: 1080px;
+      top: 42px;
+      left: 253px;
     }
   }
 
