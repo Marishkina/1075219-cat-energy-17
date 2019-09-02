@@ -48,8 +48,17 @@
   &:active {
     border: 1px solid @grey;
     box-shadow: inset 0 0 0 1px @grey;
-    outline: none;
   }
+
+  // &:invalid {
+  //   border: 1px solid #ff8282;
+  //   box-shadow: inset 0 0 0 1px #ff8282;
+  // }
+}
+
+.input__error {
+  border: 1px solid #ff8282;
+  box-shadow: inset 0 0 0 1px #ff8282;
 }
 
 .input-field--name {
@@ -103,12 +112,6 @@
       fill: #68b738;
     }
   }
-}
-
-.input__input-field:invalid {
-  border: 1px solid @grey;
-  box-shadow: inset 0 0 0 1px @grey#ff8282;
-  outline: none;
 }
 
 @media (min-width: @tablet-width) {

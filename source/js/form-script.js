@@ -22,15 +22,10 @@ var isStorageSupport = true;
     isStorageSupport = false;
   }
 
-// form.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   name.focus();
-// });
-
 form.addEventListener("submit", function (evt) {
   if (!name.value || !age.value || !weight.value || !email.value || !phone.value) {
     evt.preventDefault();
-    name.classList.add("input__error");
+    name.classList.remove("input__error");
     console.log("Нужно ввести логин и пароль");
   } else {
     if (isStorageSupport) {
@@ -42,3 +37,10 @@ form.addEventListener("submit", function (evt) {
     }
   }
 });
+
+function newFunction() {
+  form.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    name.focus();
+  });
+}
