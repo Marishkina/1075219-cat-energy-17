@@ -44,7 +44,7 @@
       <section class="catalog">
         <h1 class="catalog__title container">Каталог продукции</h1>
         <div class="catalog__wrapper">
-          <article class="catalog-card" name="weight">
+          <article class="catalog-card" id="weight">
             <div class="catalog-card__wrapper container">
               <a class="catalog-card__link" href="#">
                 <picture>
@@ -160,7 +160,7 @@
             </div>
             <a class="button catalog-card__button--width container" href="#">Заказать</a>
           </article>
-          <article class="catalog-card">
+          <article class="catalog-card" id="slim">
             <div class="catalog-card__wrapper container">
               <a class="catalog-card__link" href="#">
                 <picture>
@@ -257,30 +257,38 @@
       <section class="additional-goods container">
         <div class="additional-goods__wrapper">
           <h2 class="additional-goods__title">Дополнительные товары</h2>
-          <dl class="additional-goods__list">
-            <dt class="additional-goods__type">Сахарозаменитель</dt>
-              <dd class="additional-goods__data">1 упаковка (100 г)</dd>
-              <dd class="additional-goods__price">200 Р.</dd>
+          <div class="additional-goods__list-wrapper">
+            <dl class="additional-goods__list">
+              <dt class="additional-goods__type">Сахарозаменитель</dt>
+                <dd class="additional-goods__data">1 упаковка (100 г)</dd>
+                <dd class="additional-goods__price">200 Р.</dd>
+            </dl>
             <a class="button additional-goods__button" href="#">Заказать</a>
-          </dl>
-          <dl class="additional-goods__list">
-            <dt class="additional-goods__type">Питьевая вода</dt>
-              <dd class="additional-goods__data">5 литров</dd>
-              <dd class="additional-goods__price">50 Р.</dd>
+          </div>
+          <div class="additional-goods__list-wrapper">
+            <dl class="additional-goods__list">
+              <dt class="additional-goods__type">Питьевая вода</dt>
+                <dd class="additional-goods__data">5 литров</dd>
+                <dd class="additional-goods__price">50 Р.</dd>
+            </dl>
             <a class="button additional-goods__button" href="#">Заказать</a>
-          </dl>
-          <dl class="additional-goods__list">
-            <dt class="additional-goods__type">Молоко</dt>
-              <dd class="additional-goods__data">1 литр</dd>
-              <dd class="additional-goods__price">100 Р.</dd>
+          </div>
+          <div class="additional-goods__list-wrapper">
+            <dl class="additional-goods__list">
+              <dt class="additional-goods__type">Молоко</dt>
+                <dd class="additional-goods__data">1 литр</dd>
+                <dd class="additional-goods__price">100 Р.</dd>
+            </dl>
             <a class="button additional-goods__button" href="#">Заказать</a>
-          </dl>
-          <dl class="additional-goods__list">
-            <dt class="additional-goods__type">Витамины</dt>
-              <dd class="additional-goods__data">1 упаковка (30 г)</dd>
-              <dd class="additional-goods__price">300 Р.</dd>
+          </div>
+          <div class="additional-goods__list-wrapper">
+            <dl class="additional-goods__list">
+              <dt class="additional-goods__type">Витамины</dt>
+                <dd class="additional-goods__data">1 упаковка (30 г)</dd>
+                <dd class="additional-goods__price">300 Р.</dd>
+              </dl>
             <a class="button additional-goods__button" href="#">Заказать</a>
-          </dl>
+          </div>
         </div>
         <div class="additional-goods__bonus">
           <p class="additional-goods__bonus-text">Закажите все<br> и получите чехол для кота в подарок!</p>
@@ -300,7 +308,7 @@
         </div>
       </div>
       <div class="map footer__map">
-        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1564326542980!5m2!1sru!2sru"  frameborder="0" style="border:0" allowfullscreen>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1564326542980!5m2!1sru!2sru" style="border:0" allowfullscreen>
         </iframe>
       </div>
       <div class="footer__color-wrapper footer__color-wrapper--padding">
