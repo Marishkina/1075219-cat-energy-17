@@ -59,22 +59,22 @@
   }
 }
 
-.input-field--cat-name {
+.input__cat-name {
   padding-left: 16px;
 }
 
-.input-field--weight {
+.input__weight {
   padding-left: 19px;
 }
 
-.input-field--email,
-.input-field--phone {
+.input__email,
+.input__phone {
   padding-top: 4px;
   padding-right: 45px;
   padding-left: 13px;
 }
 
-.input-field--phone {
+.input__phone {
   padding-left: 12px;
 }
 
@@ -94,16 +94,16 @@
 }
 
 .input__icon {
-  &--mail,
-  &--phone {
+  &-mail,
+  &-phone {
     &:active {
       fill: #68b738;
     }
   }
 }
 
-.input-field--email:invalid ~ .input__link .input__icon--mail,
-.input-field--phone:invalid ~ .input__link .input__icon--phone {
+.input__email:invalid ~ .input__link .input__icon-mail,
+.input__phone:invalid ~ .input__link .input__icon-phone {
   fill: #ff8282;
 }
 
@@ -123,6 +123,8 @@
     padding-left: 14px;
     padding-top: 0;
 
+    font-size: 20px;
+    line-height: 20px;
 
     &::placeholder {
       font-size: 20px;
@@ -130,27 +132,26 @@
     }
   }
 
-  .input-field--cat-name {
+  .input__cat-name {
     padding-left: 21px;
     padding-top: 5px;
   }
 
-  .input-field--weight {
+  .input__weight {
     padding-left: 24px;
     padding-top: 3px;
   }
 
-  .input__label--phone {
+  .input__phone {
     margin-left: 0;
-    margin-top: 10px;
   }
 
-  .input-field--email {
+  .input__email {
     padding-left: 26px;
     padding-top: 5px;
   }
 
-  .input-field--phone {
+  .input__phone {
     padding-left: 20px;
     padding-top: 3px;
   }
@@ -179,5 +180,17 @@
 
   .input__input-field {
     padding-right: 55px;
+  }
+
+  .input__label--email {
+    margin-right: 22px;
+  }
+
+  .input__email {
+    padding-left: 18px;
+  }
+
+  .input__label {
+    margin-left: 0;
   }
 }
