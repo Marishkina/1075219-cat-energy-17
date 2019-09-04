@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body>
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-header page-header--margin-bottom">
       <div class="page-header__wrapper">
@@ -46,25 +50,25 @@
         <p class="form__intro container">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
 
         <div class="form__wrapper">
-          <div class="form__group--wrap">
+          <div class="form__group-wrap">
             <div class="form__group form__group--input container">
               <label class="input">
                 <span class="input__label">Имя:<sup>*</sup></span>
-                <input class="input__input-field input-field--cat-name" type="text" id="input-name" name="input-name" placeholder="Барсик">
+                <input class="input__input-field input__cat-name" type="text" id="input-name" name="input-name" placeholder="Барсик">
               </label>
               <label class="input">
                 <span class="input__label">Вес (кг):<sup>*</sup></span>
-                <input class="input__input-field input-field--weight" type="text"   id="input-weight" name="input-weight" placeholder="7">
+                <input class="input__input-field input__weight" type="text" id="input-weight" name="input-weight" placeholder="7">
               </label>
               <label class="input">
                 <span class="input__label">Возраст (лет):<sup>*</sup></span>
-                <input class="input__input-field  input-field--age" type="text" id="input-age" name="input-age" placeholder="7">
+                <input class="input__input-field input__age" type="text" id="input-age" name="input-age" placeholder="7">
               </label>
             </div>
             <div class="form__group-wrapper">
               <div class="form__group form__group--radio container">
                 <label class="radio">
-                  <input class="radio__control" type="radio" name="program" value="slim" checked>
+                  <input class="radio__control" type="radio" name="program" value="slim" checked="">
                   <span class="radio__label">Похудение</span>
                 </label>
                 <label class="radio">
@@ -81,28 +85,24 @@
           <div class="form__group container">
             <div class="form-group">
               <h2 class="form-group__title">Контактные данные (владельца кота)</h2>
-              <div class=form-group__wrapper>
+              <div class="form-group__wrapper">
                 <label class="input form-group__input">
                   <span class="input__label input__label--email">E-mail:<sup>*</sup></span>
-                  <div class="input__wrapper">
-                    <input class="input__input-field input-field--email" type="email" id="input-email" name="input-email" placeholder="kuklachev@gmail.com">
-                    <a class="input__link" href="#">
-                      <svg class="input__icon--mail" width="17" height="13">
-                        <use xlink:href="img/sprite.svg#icon-mail"></use>
-                      </svg>
-                    </a>
-                  </div>
+                  <input class="input__input-field input__email" type="email" id="input-email" name="input-email" placeholder="kuklachev@gmail.com">
+                  <a class="input__link" href="#">
+                    <svg class="input__icon-mail" width="17" height="13">
+                      <use xlink:href="img/sprite.svg#icon-mail"></use>
+                    </svg>
+                  </a>
                 </label>
                 <label class="input form-group__input">
                   <span class="input__label input__label--phone">Телефон:<sup>*</sup></span>
-                  <div class="input__wrapper">
-                    <input class="input__input-field input-field--phone" type="tel" id="input-tel" name="input-tel" pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8 (960) 900-60-90">
-                    <a class="input__link input__link--phone" href="#">
-                      <svg class="input__icon--phone" width="20" height="20">
-                        <use xlink:href="img/sprite.svg#icon-phone"></use>
-                      </svg>
-                    </a>
-                  </div>
+                  <input class="input__input-field input__phone" type="tel" id="input-tel" name="input-tel" pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8 (960) 900-60-90">
+                  <a class="input__link input__link--phone" href="#">
+                    <svg class="input__icon-phone" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </a>
                 </label>
               </div>
             </div>
@@ -114,7 +114,7 @@
               <h2 class="form-group__title form-group__title--additional">Дополнительно</h2>
               <div class="form-group__checkbox-wrapper">
                 <label class="checkbox">
-                  <input class="checkbox__control" type="checkbox" name="sugar-substitute" checked>
+                  <input class="checkbox__control" type="checkbox" name="sugar-substitute" checked="">
                   <span class="checkbox__label">Сахарозаменитель</span>
                 </label>
                 <label class="checkbox">
@@ -126,7 +126,7 @@
                   <span class="checkbox__label">Молоко</span>
                 </label>
                 <label class="checkbox">
-                  <input class="checkbox__control"  type="checkbox" name="vits">
+                  <input class="checkbox__control" type="checkbox" name="vits">
                   <span class="checkbox__label">Витамины</span>
                 </label>
               </div>
@@ -142,7 +142,7 @@
     </main>
 
     <footer class="footer footer--background-color">
-      <div class="footer__contacts--background-color footer__contacts-wrapper footer__contacts--padding container">
+      <div class="footer__contacts-wrapper container">
         <div class="footer__contacts">
           <h2 class="footer__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
           <div class="footer__address">
@@ -152,7 +152,7 @@
         </div>
       </div>
       <div class="map footer__map">
-        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1564326542980!5m2!1sru!2sru"  frameborder="0" style="border:0" allowfullscreen>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1564326542980!5m2!1sru!2sru" style="border:0" allowfullscreen="">
         </iframe>
       </div>
       <div class="footer__color-wrapper footer__color-wrapper--padding">
@@ -164,7 +164,7 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Мы в Вконтакте</span>
-                <svg class="social__icon--vk" width="22" height="12">
+                <svg class="social__icon-vk" width="22" height="12">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
@@ -172,15 +172,15 @@
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Мы в Инстаграме</span>
-                <svg class="social__icon--instagram" width="16" height="16">
-                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                <svg class="social__icon-instagram" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.instagram.com/htmlacademy">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
-                <svg class="social__icon--fb" width="10" height="19">
+                <svg class="social__icon-fb" width="10" height="19">
                   <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
@@ -190,7 +190,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             <a class="copyright__link-img" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="visually-hidden">Логотип HTML Academy</span>
-              <svg class="copyright__icon--htmlacademy" width="60" height="60">
+              <svg class="copyright__icon-htmlacademy" width="60" height="60">
                 <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
               </svg>
             </a>

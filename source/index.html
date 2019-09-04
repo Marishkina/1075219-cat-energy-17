@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body>
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-header">
       <div class="page-header__wrapper">
@@ -22,7 +26,7 @@
         </div>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__toggle-wrapper container">
-            <button class="main-nav__toggle" type="button"><span  class="visually-hidden">Открыть меню</span></button>
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
           <ul class="site-list">
             <li class="site-list__item site-list__item--active">
@@ -44,9 +48,9 @@
         </div>
         <div class="container">
           <picture>
-            <source type="img/webp" media="(min-width: 1300px)" srcset="img/webp/index-can-desktop@1x.webp 1x, img/webp/index-can-desktop@2x.wepb 2x">
-            <source type="img/webp" media="(min-width: 768px)" srcset="img/webp/index-can-tablet@1x.webp 1x, img/webp/index-can-tablet@2x.webp 2x">
-            <source type="img/webp" srcset="img/webp/index-can-mobile@1x.webp 1x, img/webp/index-can-mobile@2x.webp 2x">
+            <source type="img/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.wepb 2x">
+            <source type="img/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="img/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
 
             <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
@@ -104,18 +108,18 @@
           <span class="living-example__text living-example__text--position">15 000 руб.</span>
           <div class="living-example__image">
             <picture>
-              <source type="img/webp" media="(min-width: 1300px)" srcset="img/webp/before-desktop@1x.webp 1x, img/webp/before-desktop@2x.wepb 2x">
-              <source type="img/webp" media="(min-width: 768px)" srcset="img/webp/before-tablet@1x.webp 1x, img/webp/before-tablet@2x.webp 2x">
-              <source type="img/webp" srcset="img/webp/before-mobile@1x.webp 1x, img/webp/before-mobile@2x.webp 2x">
+              <source type="img/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.wepb 2x">
+              <source type="img/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="img/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
               <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
               <img class="living-example__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Фотография толстого кота">
             </picture>
             <picture>
-              <source type="img/webp" media="(min-width: 1300px)" srcset="img/webp/after-desktop@1x.webp 1x, img/webp/after-desktop@2x.wepb 2x">
-              <source type="img/webp" media="(min-width: 768px)" srcset="img/webp/after-tablet@1x.webp 1x, img/webp/after-tablet@2x.webp 2x">
-              <source type="img/webp" srcset="img/webp/after-mobile@1x.webp 1x, img/webp/after-mobile@2x.webp 2x">
+              <source type="img/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.wepb 2x">
+              <source type="img/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="img/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
               <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
@@ -144,7 +148,7 @@
         </div>
       </div>
       <div class="map footer__map">
-        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1564326542980!5m2!1sru!2sru"  frameborder="0" style="border:0" allowfullscreen>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1564326542980!5m2!1sru!2sru" style="border:0" allowfullscreen="">
         </iframe>
       </div>
       <div class="footer__color-wrapper">
@@ -156,7 +160,7 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Мы в Вконтакте</span>
-                <svg class="social__icon--vk" width="22" height="12">
+                <svg class="social__icon-vk" width="22" height="12">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
@@ -164,15 +168,15 @@
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Мы в Инстаграме</span>
-                <svg class="social__icon--instagram" width="16" height="16">
-                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                <svg class="social__icon-instagram" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.instagram.com/htmlacademy">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
-                <svg class="social__icon--fb" width="10" height="19">
+                <svg class="social__icon-fb" width="10" height="19">
                   <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
@@ -182,7 +186,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             <a class="copyright__link-img" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="visually-hidden">Логотип HTML Academy</span>
-              <svg class="copyright__icon--htmlacademy" width="60" height="60">
+              <svg class="copyright__icon-htmlacademy" width="60" height="60">
                 <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
               </svg>
             </a>
