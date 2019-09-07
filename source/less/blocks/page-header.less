@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
 
+  position: relative;
+
   padding-top: 10px;
 
   background-color: @white;
@@ -27,13 +29,9 @@
   }
 }
 
-.page-header__intro {
-  position: relative;
-}
-
 .page-header__background {
   min-height: 305px;
-  width: 320px;
+  min-width: 320px;
   padding-bottom: 27px;
   margin-bottom: 135px;
   box-sizing: border-box;
@@ -62,7 +60,7 @@
 }
 
 .page-header__slogan {
-  margin-bottom: 28px;
+  margin-bottom: 140px;
   box-sizing: border-box;
 
   .oswald;
@@ -72,9 +70,16 @@
   color: @white;
 }
 
+.page-header__intro-positioner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .page-header__img {
   position: absolute;
-  top: 165px;
+  top: -274px;
 
   width: 280px;
 }
@@ -86,8 +91,6 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
-    position: relative;
-
     padding-top: 25px;
   }
 
@@ -108,31 +111,25 @@
   }
 
   .page-header__intro {
-    display: flex;
-    flex-wrap: wrap;
-
-    width: 768px;
-    min-height: 860px;
     padding-top: 52px;
-    padding-left: 88px;
-    padding-right: 88px;
-    margin: 0 auto;
-    margin-bottom: 2px;
     box-sizing: border-box;
   }
 
   .page-header__background {
-    width: 768px;
+    min-height: 1px;
+    margin-bottom: 0;
+    padding-bottom: 0;
     background-image: none;
     background-color: transparent;
   }
 
   .page-header__title {
     width: 505px;
-    height: 120px;
+    min-height: 120px;
     margin: 0;
     margin-bottom: 41px;
     padding: 0;
+    padding-left: 57px;
 
     font-size: 60px;
     line-height: 60px;
@@ -145,6 +142,7 @@
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
+    padding-left: 58px;
 
     font-size: 20px;
     line-height: 20px;
@@ -152,10 +150,14 @@
     text-align: left;
   }
 
+  .page-header__intro-positioner {
+    min-height: 609px;
+  }
+
   .page-header__button {
     position: absolute;
-    bottom: 506px;
-    left: 119px;
+    left: calc(50% - 265px);
+    top: 28px;
 
     width: 245px;
     height: 52px;
@@ -163,30 +165,30 @@
     font-size: 20px;
     line-height: 20px;
     padding-top: 14px;
+    box-sizing: border-box;
+    z-index: 2;
   }
 
   .page-header__img {
-    top: 253px;
-    left: 29px;
-
+    top: 0;
     width: 709px;
-    margin: 0;
+
+    z-index: 1;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    position: relative;
     padding-bottom: 18px;
     padding-top: 54px;
-    margin-bottom: 78px;
+    margin-bottom: 40px;
 
     background-image:
       url("../img/index-background-desktop@1x.jpg"),
       linear-gradient(to right, transparent 0, @main-color 0);
     background-repeat: no-repeat;
     background-size: 720px 696px, 100%;
-    background-position: calc(50% + 359px) top, 50vw;
+    background-position: calc(50% + 360px) top, 50vw;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image:
@@ -224,32 +226,31 @@
   }
 
   .page-header__intro {
-    flex-direction: column;
-
-    position: relative;
-
-    width: 1300px;
     min-height: 558px;
     padding-top: 103px;
-    padding-left: 120px;
-    padding-right: 120px;
   }
 
-  .page-header__background {
-    margin-left: 0;
-    padding-left: 0;
+  .page-header__title {
+    padding-left: 43px;
+  }
+
+  .page-header__slogan {
+    padding-left: 43px;
+  }
+
+  .page-header__intro-positioner {
+    min-height: 250px;
   }
 
   .page-header__img {
-    position: absolute;
-    top: 22px;
+    top: -282px;
     left: 490px;
 
     width: 552px;
   }
 
   .page-header__button {
-    top: 337px;
-    left: 120px;
+    top: 33px;
+    left: 123px;
   }
 }

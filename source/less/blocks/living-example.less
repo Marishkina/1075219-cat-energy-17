@@ -74,14 +74,14 @@
 
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px dotted rgba(68, 68, 68, 0.23);
 
   &:hover {
-    border-bottom: 1px solid @grey;
+    border-bottom: 1px solid rgba(68, 68, 68, 0.4);
   }
 
   &:active {
-    border-bottom: 1px dotted rgba(68, 68, 68, 0.3);
+    border-bottom: none;
   }
 }
 
@@ -118,6 +118,8 @@
 
   width: 35px;
   height: 6px;
+
+  font-size: 0;
 
   border-radius: 10px;
   background-color: @main-color;
